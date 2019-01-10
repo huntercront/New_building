@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<meta charset="UTF-8">
 	<title>Новостройки Тверь</title>
 </head>
@@ -695,8 +697,8 @@
 	<section id="tour" class="bus-tour">
 		<div class="bus-tour-grid">
 			<div class="bus-tour-content">
-				<h2>Еженедельный автобусный тур по жилым комплексам Санкт-Петербурга</h2>
-				<p>Всего в два клика запишись на обзорный тур новостроек Санкт-Петербурга и Ленинградской Области</p>
+				<h2>Еженедельный автобусный тур по жилым комплексам Твери</h2>
+				<p>Всего в два клика pапишитесь на индивидуальную экскурсию по новостройкам Твери и Тверской области</p>
 				<a href="#" class="open_modal5">Записаться</a>
 			</div>
 			<div class="bus-tour-img">
@@ -766,6 +768,15 @@
 	<section class="about-us">
 		<div class="about-us-grid">
 			<h2>НАША КОМАНДА</h2>
+			<div class="autoplay">
+					<div><img class="vertical" src="images/partner20.jpg" alt=""></div>
+					<div><img class="vertical" src="images/partner20.jpg" alt=""></div>
+					<div><img class="vertical" src="images/partner20.jpg" alt=""></div>
+					<div><img class="vertical" src="images/partner20.jpg" alt=""></div>
+					<div><img class="vertical" src="images/partner20.jpg" alt=""></div>
+					<div><img class="vertical" src="images/partner20.jpg" alt=""></div>
+					<div><img class="vertical" src="images/partner20.jpg" alt=""></div>
+				</div>
 			<p>Давайте, познакомимся! Команда «Совинвест-недвижимость» приветствует Вас на нашем сайте. Свою профессиональную
 				деятельность мы успешно ведем с 2009. Динамично развиваясь на протяжении стольких лет, наша компания
 				зарекомендовала себя, как профессиональный и компетентный коллектив специалистов. Компания "СовИнвест" откроет для
@@ -776,7 +787,15 @@
 				решении вопросов различного уровня, сопутствующих сделкам, делают нас надежным партнером самых крупных
 				отечественных и зарубежных компаний, а также — лучшим посредником в сделках с недвижимостью для частных лиц.
 			</p>
+	
 		</div>
+	
+	
+
+		
+
+
+
 	</section>
 	<footer id="footer" class="footer">
 		<div class="footer-grid">
@@ -2115,6 +2134,58 @@
 	<script src="js/object-fit-videos.js"></script>
 	<script src="js/jquery.maskedinput.js"></script>
 	<script src="js/clickit.js"></script>
+	<script src="js/slick.js"></script>
+	<script>
+	$(document).ready(function () {
+	$('.autoplay').slick({
+	slidesToShow: 5,
+	centerMode: true,
+	dots: true,
+	centerPadding: '5px',
+  slidesToScroll: 1,
+  autoplay: true,
+	autoplaySpeed: 5500,
+	responsive: [
+	{
+      breakpoint: 1199,
+      settings: {
+        arrows: true,
+        centerMode: true,
+				slidesToShow: 3,
+				dots: true,
+      }
+		},
+	{
+      breakpoint: 979,
+      settings: {
+        arrows: false,
+				centerMode: true,
+				dots: true,
+        slidesToShow: 3
+      }
+		},
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+				centerMode: true,
+				dots: true,
+        slidesToShow: 3
+      }
+		},
+		{
+		breakpoint: 666,
+      settings: {
+        arrows: false,
+				centerMode: true,
+				dots: true,
+        slidesToShow: 1
+			}
+		}
+  ]
+});
+});
+</script>
 	<script>
 		$(document).ready(function () {
 			$(".owl-carousel").owlCarousel();

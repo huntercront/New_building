@@ -28,6 +28,11 @@ font-style: normal;
 	margin: 0;
 	padding: 0;
 }
+.vertical{
+	margin: auto;
+	width: 100%;
+	max-width: 200px;
+}
 .color-subtitle{
 	color: #ffc412;
 }
