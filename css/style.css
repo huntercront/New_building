@@ -28,6 +28,32 @@ font-style: normal;
 	margin: 0;
 	padding: 0;
 }
+.about-descr{
+	margin-top: 60px;
+	margin-bottom: 40px;
+	font-family: "SourceSansPro-Regular";
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
+.about-slider{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+.team-name{
+	text-align: center;
+	color: #fff;
+	font-family: "SourceSansPro-Light";
+}
+.team-cap{
+	font-family: "SourceSansPro-Light";
+	font-size: 20px;
+	padding: 0;
+	margin-top: 5px;
+	color: #fff;
+	text-align: center;
+	opacity: .8;
+}
 .vertical{
 	margin: auto;
 	width: 100%;
@@ -1471,9 +1497,9 @@ section.about-us {
 	width: 100%;
 	min-width: 1200px;
 	margin: 0 auto;
-	height: 500px;
 	overflow: hidden;
-	background: url("../images/aboutus-bg.jpg") no-repeat;
+	background-color: #414141;
+	/* background: url("../images/aboutus-bg.jpg") no-repeat; */
 	background-size: cover;
 	background-position: 50%;
 }
@@ -1487,14 +1513,7 @@ section.about-us h2 {
 	font-family: "SourceSansPro-SemiBold";
 	font-size: 36px;
 	color: #fff;
-	margin-top: 100px;
-	text-align: center;
-}
-section.about-us p {
-	font-family: "SourceSansPro-Regular";
-	font-size: 20px;
-	color: #fff;
-	margin-top: 20px;
+	margin-top: 60px;
 	text-align: center;
 }
 footer.footer {
@@ -4698,13 +4717,6 @@ a.expert-call {
 		margin-top: 50px;
 		text-align: center;
 	}
-	section.about-us p {
-		font-family: "SourceSansPro-Regular";
-		font-size: 20px;
-		color: #fff;
-		margin-top: 20px;
-		text-align: center;
-	}
 
 
 	footer.footer {
@@ -4964,13 +4976,6 @@ a.expert-call {
 		font-size: 30px;
 		color: #fff;
 		margin-top: 50px;
-		text-align: center;
-	}
-	section.about-us p {
-		font-family: "SourceSansPro-Regular";
-		font-size: 20px;
-		color: #fff;
-		margin-top: 20px;
 		text-align: center;
 	}
 
@@ -7538,13 +7543,6 @@ a.expert-call {
 		margin-top: 50px;
 		text-align: center;
 	}
-	section.about-us p {
-		font-family: "SourceSansPro-Regular";
-		font-size: 17px;
-		color: #fff;
-		margin-top: 20px;
-		text-align: center;
-	}
 
 
 	footer.footer {
@@ -7843,13 +7841,6 @@ a.expert-call {
 		font-size: 30px;
 		color: #fff;
 		margin-top: 50px;
-		text-align: center;
-	}
-	section.about-us p {
-		font-family: "SourceSansPro-Regular";
-		font-size: 15px;
-		color: #fff;
-		margin-top: 20px;
 		text-align: center;
 	}
 
@@ -9486,11 +9477,9 @@ a.expert-call {
 		text-align: center;
 	}
 	section.about-us p {
-		font-family: "SourceSansPro-Regular";
-		font-size: 14px;
-		color: #fff;
-		margin-top: 20px;
+		font-size: 16px;
 		text-align: center;
+		color: #fff;
 	}
 
 
