@@ -34,6 +34,7 @@ font-style: normal;
 	font-family: "SourceSansPro-Regular";
 	font-size: 20px;
 	color: #fff;
+	opacity: .8;
 	text-align: center;
 }
 .about-slider{
@@ -46,14 +47,13 @@ font-style: normal;
 	font-family: "SourceSansPro-Light";
 }
 .team-cap{
-	font-family: "SourceSansPro-Light";
-	font-size: 20px;
+	font-family: "SourceSansPro-SemiBold";
+	font-size: 22px;
 	padding: 0;
 	margin-top: 5px;
-	color: #fff;
+	color: #3155aa;
 	text-align: center;
-	opacity: .8;
-}
+	}
 .vertical{
 	margin: auto;
 	width: 100%;
@@ -1498,8 +1498,7 @@ section.about-us {
 	min-width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
-	background-color: #414141;
-	/* background: url("../images/aboutus-bg.jpg") no-repeat; */
+	background: url("../images/aboutus-bg.jpg") no-repeat;
 	background-size: cover;
 	background-position: 50%;
 }
