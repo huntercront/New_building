@@ -28,6 +28,9 @@ font-style: normal;
 	margin: 0;
 	padding: 0;
 }
+.color-subtitle{
+	color: #ffc412;
+}
 .header {
 	position: fixed;
 	display: block;
@@ -73,6 +76,16 @@ font-style: normal;
 	width: 50%;
 	font-family: 'SourceSansPro-Regular';
 	font-size: 18px;
+}
+.up-subtitle{
+	font-size: 28px;
+	font-family: 'SourceSansPro-Light'
+;	text-align: center;
+	color: #fff;
+	margin-top: 10px;
+}
+.color-subtitle{
+	color: #ffc412;
 }
 .header-menu {
 	display: block;
@@ -205,7 +218,7 @@ section.intro video {
 .s1, .s2, .s3, .s4 {
 	display: block;
 	width: 90%;
-	height: 350px;
+	height: 370px;
 	padding: 20px;
 	border-radius: 10px;
 	margin: 0 auto;
@@ -224,9 +237,9 @@ section.intro video {
 .slider-content p {
 	font-family: "SourceSansPro-Regular";
 	color: #fff;
-	font-size: 28px;
+	font-size: 20px;
 	text-align: center;
-	margin-top: 25px;
+	margin-top: 15px;
 }
 .slider-content p strong {
 	text-transform: uppercase;
@@ -4337,11 +4350,11 @@ a.expert-call {
 		width: 980px;
 	}
 	.slider-content h1 {
-		font-size: 28px;
+		font-size: 40px;
 	}
-	.s2 h1 {
+	/* .s2 h1 {
 		font-size: 28px
-	}
+	} */
 	.s2 p {
 		font-size: 24px;
 	}
@@ -4487,11 +4500,9 @@ a.expert-call {
 		width: 768px;
 	}
 	.slider-content h1 {
-		font-family: "SourceSansPro-SemiBold";
 		color: #fff;
-		font-size: 28px;
+		font-size: 32px;
 		text-align: center;
-		margin-top: 25px;
 	}
 	.up-text {
 		text-transform: uppercase;
@@ -4499,17 +4510,17 @@ a.expert-call {
 	.slider-content p {
 		font-family: "SourceSansPro-Regular";
 		color: #fff;
-		font-size: 28px;
+		font-size: 20px;
 		text-align: center;
-		margin-top: 25px;
+		margin-top: 15px;
 	}
 	.slider-content p strong {
 		text-transform: uppercase;
 		color: #ffc412;
 	}
-	.s2 h1 {
+	/* .s2 h1 {
 		font-size: 25px;
-	}
+	} */
 	.s2 p {
 		font-size: 20px;
 	}
@@ -4549,7 +4560,6 @@ a.expert-call {
 		color: #fff;
 		text-align: center;
 		vertical-align: middle;
-		margin-top: 50px;
 	}
 	.discount-object-content p {
 		font-size: 16px;
@@ -4748,11 +4758,9 @@ a.expert-call {
 		width: 736px;
 	}
 	.slider-content h1 {
-		font-family: "SourceSansPro-SemiBold";
 		color: #fff;
-		font-size: 32px;
+		font-size: 28px;
 		text-align: center;
-		margin-top: 25px;
 	}
 	.up-text {
 		text-transform: uppercase;
@@ -4760,9 +4768,9 @@ a.expert-call {
 	.slider-content p {
 		font-family: "SourceSansPro-Regular";
 		color: #fff;
-		font-size: 28px;
+		font-size: 18px;
 		text-align: center;
-		margin-top: 25px;
+		margin-top: 15px;
 	}
 	.slider-content p strong {
 		text-transform: uppercase;
@@ -7341,18 +7349,16 @@ a.expert-call {
 	.slider-content {
 		width: 667px;
 	}
-	.s2 h1 {
+	/* .s2 h1 {
 		font-size: 22px !important;
-	}
+	} */
 	.s2 p {
 		font-size: 18px !important;
 	}
 	.slider-content h1 {
-		font-family: "SourceSansPro-SemiBold";
 		color: #fff;
-		font-size: 30px;
+		font-size: 32px;
 		text-align: center;
-		margin-top: 25px;
 	}
 	.up-text {
 		text-transform: uppercase;
@@ -7360,9 +7366,9 @@ a.expert-call {
 	.slider-content p {
 		font-family: "SourceSansPro-Regular";
 		color: #fff;
-		font-size: 25px;
+		font-size: 20px;
 		text-align: center;
-		margin-top: 25px;
+		margin-top: 15px;
 	}
 	.slider-content p strong {
 		text-transform: uppercase;
@@ -7609,16 +7615,19 @@ a.expert-call {
 	.slider-content {
 		width: 414px;
 	}
-	.s2 h1 {
+	/* .s2 h1 {
 		font-size: 22px !important;
-	}
+	} */
 	.s2 p {
 		font-size: 18px !important;
+	}
+	.up-subtitle{
+		font-size: 20px;
 	}
 	.slider-content h1 {
 		font-family: "SourceSansPro-SemiBold";
 		color: #fff;
-		font-size: 25px;
+		font-size: 24px;
 		text-align: center;
 		margin-top: 20px;
 	}
@@ -7717,13 +7726,7 @@ a.expert-call {
 		width: 400px;	
 	}
 	.why-us-block-img {
-		display: block;
-		float: left;
-		width: 10%;
-		height: 100px;
-		padding-top: 26px;
-		padding-left: 20px;
-		overflow: hidden;
+		display: none;
 	}
 	section.ipoteka {
 		min-width: 414px;
@@ -9256,9 +9259,9 @@ a.expert-call {
 	.slider-content {
 		width: 375px;
 	}
-	.s2 h1 {
+	/* .s2 h1 {
 		font-size: 20px !important;
-	}
+	} */
 	.s2 p {
 		font-size: 16px !important;
 	}
@@ -9364,13 +9367,7 @@ a.expert-call {
 		width: 350px;	
 	}
 	.why-us-block-img {
-		display: block;
-		float: left;
-		width: 10%;
-		height: 100px;
-		padding-top: 26px;
-		padding-left: 20px;
-		overflow: hidden;
+		display: none;
 	}
 	section.ipoteka {
 		min-width: 375px;
