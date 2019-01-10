@@ -51,7 +51,7 @@ font-style: normal;
 	font-size: 22px;
 	padding: 0;
 	margin-top: 5px;
-	color: #3155aa;
+	color: #3155aa!important;
 	text-align: center;
 	}
 .vertical{
@@ -1009,7 +1009,6 @@ section.catalog {
 	display: block;
 	width: 1000px;
 	margin: 0 auto;
-	overflow: hidden;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -4882,6 +4881,9 @@ a.expert-call {
 	.ipoteka-grid {
 		width: 736px;
 	}
+	.ipoteka-content{
+		margin-left: 20px;
+	}
 	.ipoteka-content h2 {
 		font-family: "SourceSansPro-Light";
 		font-size: 70px;
@@ -7728,7 +7730,10 @@ a.expert-call {
 		width: 400px;	
 	}
 	.why-us-block-img {
-		display: none;
+		/* display: none; */
+	}
+	.developers-grid h2,.discount2-grid h2,.why-us-grid h2{
+		font-size: 28px!important;
 	}
 	section.ipoteka {
 		min-width: 414px;
@@ -7837,7 +7842,7 @@ a.expert-call {
 	}
 	section.about-us h2 {
 		font-family: "SourceSansPro-SemiBold";
-		font-size: 30px;
+		font-size: 28px;
 		color: #fff;
 		margin-top: 50px;
 		text-align: center;
@@ -9503,7 +9508,6 @@ a.expert-call {
 	.footer-center img {
 		display: block;
 		margin-left: -50px;
-		width: 150% !important;
 	}
 	.footer-left {
 		display: none;
