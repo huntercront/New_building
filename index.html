@@ -4,10 +4,10 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700&amp;subset=cyrillic" rel="stylesheet">
 	<meta charset="UTF-8">
 	<title>Новостройки Тверь</title>
 </head>
@@ -52,16 +52,16 @@
 			<source src="video/video-start.mp4" type="video/mp4">
 		</video>
 		<div class="slider-content">
-			<div class="owl-carousel slide-one">
+			<div class="main-slider slide-one">
 				<div class="s1">
-					<h1 class="up-text">ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ПО <br>НОВОСТРОЙКАМ В ТВЕРИ</h1>
-					<h2 class="up-text up-subtitle">Квартиры от <span class="color-subtitle">1 065 000</span></h2>
+					<h1 class="up-text">ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ПО НОВОСТРОЙКАМ В ТВЕРИ</h1>
+					<h2 class="up-subtitle">Квартиры от <span class="color-subtitle">1 065 000</span></h2>
 					<p>Ответьте на 7 простых вопросов и получите от нашего эксперта индивидуальную подборку квартир</p>
 					<a href="#" class="main-offer quiz-up">ПРОЙДИТЕ ТЕСТ</a>
 				</div>
 				<div class="s2">
 					<h1 class="up-text">ТОП 15 новостроек повышенной комфортности</h1>
-					<p>Мы подготовили для вас самые популярные ЖК в сегменте премиум класса<br>
+					<p>Мы подготовили для вас самые популярные ЖК в сегменте премиум класса
 						Оставьте заявку и наш эксперт вышлет вам подборку жилых комплексов</p>
 					<a href="#" class="open_modal6">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</a>
 				</div>
@@ -81,7 +81,7 @@
 				<span class="equa-big"></span>
 			</div>
 			<h2>Спецпредложения, акции и скидки от надежных застройщиков</h2>
-			<p>Посмотрите 15 самых популярных ЖК и скачайте PDF презентацию с актуальными акциями.</p>
+			<p>Посмотрите <span class="color-subtitle">15 самых популярных</span> ЖК и скачайте PDF презентацию с актуальными акциями.</p>
 		</div>
 		<div class="discount2-objects" id="objects1">
 			<div class="discount2-object" id="object1">
@@ -1050,7 +1050,7 @@
 				<div class="quiz-choice quiz-step-block checkitnow">
 					<div class="quiz-block-left quiz-step-block">
 						<div class="make-choice">
-							<input class="checkbox-quiz" id="2mln" type="checkbox" name="cost">
+							<input class="checkbox-quiz" id="2mln" type="checkbox" name="cost" checked>
 							<label for="2mln">До 2 млн.</label>
 						</div>
 						<div class="make-choice">
@@ -2120,6 +2120,8 @@
 	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/slick.js"></script>
+	<script src="js/sliderscript.js"></script>
 	<script src="js/script.js"></script>
 	<script src="js/script-2.js"></script>
 	<script src="js/call.js"></script>
@@ -2139,71 +2141,13 @@
 	<script src="js/tour.js"></script>
 	<script src="js/new-comfort.js"></script>
 	<script src="js/cheap-flat.js"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/owl.custom.js"></script>
+	<!-- <script src="js/owl.carousel.js"></script>
+	<script src="js/owl.custom.js"></script> -->
 	<script src="js/wow.js"></script>
 	<script src="js/object-fit-videos.js"></script>
 	<script src="js/jquery.maskedinput.js"></script>
 	<script src="js/clickit.js"></script>
-	<script src="js/slick.js"></script>
-	<script>
-	$(document).ready(function () {
-	$('.autoplay').slick({
-	slidesToShow: 5,
-	centerMode: true,
-	dots: true,
-	edgeFriction: 0.5,
-	centerPadding: '5px',
-  slidesToScroll: 1,
-  autoplay: true,
-	autoplaySpeed: 5500,
-	responsive: [
-	{
-      breakpoint: 1199,
-      settings: {
-        arrows: true,
-        centerMode: true,
-				slidesToShow: 3,
-				dots: true,
-      }
-		},
-	{
-      breakpoint: 979,
-      settings: {
-        arrows: false,
-				centerMode: true,
-				dots: true,
-        slidesToShow: 3
-      }
-		},
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-				centerMode: true,
-				dots: true,
-        slidesToShow: 3
-      }
-		},
-		{
-		breakpoint: 666,
-      settings: {
-        arrows: false,
-				centerMode: true,
-				dots: true,
-        slidesToShow: 1
-			}
-		}
-  ]
-});
-});
-</script>
-	<script>
-		$(document).ready(function () {
-			$(".owl-carousel").owlCarousel();
 
-		});
-	</script>
 	<script>
 		new WOW().init();
 	</script>
