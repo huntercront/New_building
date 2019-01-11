@@ -46,6 +46,7 @@ font-style: normal;
 	text-align: center;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
 }
 .team-cap{
 	font-family: 'Roboto', sans-serif;
@@ -258,7 +259,7 @@ section.intro video {
 .s1, .s2, .s3, .s4 {
 	display: block;
 	width: 90%;
-	height: 380px;
+	height: 90%;
 	padding: 20px;
 	border-radius: 10px;
 	margin: 0 auto;
@@ -741,9 +742,9 @@ span.equa-middle {
 	vertical-align: middle;
 	margin-top: 70px;
 }
-.discount2-title-correct {
+/* .discount2-title-correct {
 	font-size: 25px !important;
-}
+} */
 .discount-object-content span.district {
 	position: relative;
 	display: block;
