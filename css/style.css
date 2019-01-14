@@ -3314,7 +3314,7 @@ footer.footer {
 .quiz2-field {
 	display: block;
 	position: relative;
-	width: 80%;
+	width: 90%;
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -3512,6 +3512,7 @@ footer.footer {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	color: #395daf;
+	text-decoration: underline;
 }
 .confidential2 input[type=checkbox]:checked + label:before {
     position: absolute;
@@ -5917,12 +5918,13 @@ a.expert-call {
 		width: 64%;
 		display: block;
 		float: left;
-		margin-top: 22px;
+		margin-top: 20px;
 		margin-left: 0px;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 700;
 		color: #395daf;
-		font-size: 12px;
+		font-size: 14px;
+		text-decoration: underline;
 	}
 	.form-tour input[type=checkbox]:checked + label:before {
 	    position: absolute;
@@ -7096,7 +7098,7 @@ a.expert-call {
 	.quiz2 input {
 		padding-left: 20px;
 		font-family: 'Open Sans', sans-serif;
-		font-size: 18px;
+		font-size: 14px;
 	}
 	.quiz2-content {
 		position: relative;
@@ -7190,7 +7192,7 @@ a.expert-call {
 	.quiz2-field {
 		display: block;
 		position: relative;
-		width: 80%;
+		width: 90%;
 		overflow: hidden;
 		margin: 0 auto;
 	}
@@ -7386,8 +7388,8 @@ a.expert-call {
 		display: block;
 		float: left;
 		margin-top: 23px;
-		font-size: 10px;
-		margin-left: 0px;
+		font-size: 12px;
+		margin-left: -3px;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 700;
 		color: #395daf;
@@ -9690,6 +9692,24 @@ a.expert-call {
 	}
 }
 @media screen and (max-width: 390px) {
+	.quiz2-count p{
+		width: 95%;
+		line-height: 9px;
+		margin-top: 5px;
+	}
+	.confidential2 label{
+		padding-left: 24px!important;
+		margin-top: 21px !important;
+	}
+	.close2-quiz{
+    width: 22px;
+		height: 20px;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.quiz2{
+		width: 320px;
+	}
 	.flaty-content{
 		padding: 20px;
 	}
