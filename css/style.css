@@ -33,7 +33,7 @@ font-style: normal;
 	margin-top: 60px;
 	margin-bottom: 40px;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 20px;
+	font-size: 16px;
 	color: #fff;
 	opacity: .8;
 	text-align: center;
@@ -46,12 +46,12 @@ font-style: normal;
 	text-align: center;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 22px;
+	font-size: 20px;
 }
 .team-cap{
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
-	font-size: 22px;
+	font-size: 18px;
 	padding: 0;
 	margin-top: 5px;
 	color: #3155aa!important;
@@ -64,6 +64,9 @@ font-style: normal;
 }
 .color-subtitle{
 	color: #ffc412;
+}
+.color-subtitle-blue{
+	color:#3155aa;
 }
 .header {
 	position: fixed;
@@ -1152,7 +1155,7 @@ section.ipoteka {
 .ipoteka-content h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 64px;
-	color: #626262;
+	color: #3155aa;
 	margin-top: 10px;
 }
 .ipoteka-content p {
@@ -1277,7 +1280,7 @@ section.ipoteka-partners {
 	height: 35px;
 }
 .ipoteka-percent span.percent-bank {
-	font-size: 28px;
+	font-size: 26px;
 	margin-bottom: 10px;
 	margin-top: 10px;
 	text-align: center;
@@ -1665,7 +1668,6 @@ footer.footer {
 }
 .footer-contact p {
 	display: inline-block;
-	margin-left: 20px;
 }
 .footer-bottom {
 	margin-top: 0px;
@@ -1687,7 +1689,6 @@ footer.footer {
 	position: fixed;
 	left: 0%;
 	top: 0%;
-	width: 35%;
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.9);
 	z-index: 9999;
@@ -1720,18 +1721,24 @@ footer.footer {
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
-	font-size: 36px;
+	font-size: 22px;
 	text-decoration: none;
+	transition: 300ms;
+}
+.hidden-menu li a:hover {
+	opacity: 0.65;
+
 }
 .help-me {
-	width: 400px;
+	width: 300px;
 	position: relative;
 	display: block;
 	margin: 0 auto;
 	overflow: hidden;
-	margin-top: 40px;
+	margin-top: 20px;
 }
 .help-me img {
+	max-width: 100px;
 	display: block;
 	margin: 0 auto;
 }
@@ -1758,7 +1765,7 @@ footer.footer {
 .address-block {
 	display: block;
 	margin: 0 auto;
-	width: 400px;
+	width: 300px;
 }
 .address-block p {
 	color: #a2a2a2;
@@ -1904,6 +1911,7 @@ footer.footer {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	color: #395daf;
+
 }
 .form-call input[type=checkbox]:checked + label:before {
     position: absolute;
@@ -2138,6 +2146,7 @@ footer.footer {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	color: #395daf;
+	text-decoration: underline;
 }
 .form-flat input[type=checkbox]:checked + label:before {
     position: absolute;
@@ -2383,7 +2392,7 @@ footer.footer {
     line-height: 20px;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 700;
-    padding-left: 40px !important;
+    padding-left: 38px !important;
     color: #395daf;
     margin-top: 20px !important;
     z-index: 999;
@@ -2397,6 +2406,7 @@ footer.footer {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	color: #395daf;
+	text-decoration: underline;
 }
 .form-flaty input[type=checkbox]:checked + label:before {
     position: absolute;
@@ -3816,7 +3826,7 @@ input.radio:checked + label:after {
 	display: block;
 	width: 100%;
 	overflow: hidden;
-	margin-top: 50px;
+	margin-top: 25px;
 	padding-bottom: 50px;
 }
 .send-buttons {
@@ -4117,7 +4127,7 @@ input.radio:checked + label:after {
 }
 .status-block p.name-expert {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 	color: #5e6c8a;
 }
 .about-expert {
@@ -4980,13 +4990,13 @@ a.expert-call {
 	.ipoteka-content h2 {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 70px;
-		color: #626262;
+		color: #3155aa;
 		margin-top: 10px;
 	}
 	.ipoteka-content p {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 22px;
-		color: #626262;
+		color: #141414;
 		margin-top: 10px;
 	}
 	.ipoteka-bank {
@@ -6480,7 +6490,7 @@ a.expert-call {
 		transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
-		height: 350px;
+		height: 380px;
 		border-radius: 10px;
 		z-index: 9999999;
 		overflow: hidden;
@@ -6677,8 +6687,8 @@ a.expert-call {
 		display: block;
 		width: 100%;
 		overflow: hidden;
-		margin-top: 10px;
-		padding-bottom: 50px;
+		/* margin-top: 2px; */
+		padding-bottom: 20px;
 	}
 	.send-buttons {
 		margin-top: 10px;
@@ -7580,7 +7590,7 @@ a.expert-call {
 	.ipoteka-content h2 {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 70px;
-		color: #626262;
+		color: #3155aa;
 		margin-top: 10px;
 	}
 	.ipoteka-content p {
@@ -7707,16 +7717,12 @@ a.expert-call {
 	}
 }
 
-
 @media screen and (max-width: 666px) {
 	.header {
-		min-width: 414px;
+		min-width: 600px;
 	}
 	.header-grid {
-		width: 414px;
-	}
-	.header-menu {
-		width: 38%;
+		width:600px;
 	}
 	.header-menu .pro {
 		position: relative;
@@ -7740,7 +7746,7 @@ a.expert-call {
 	.header-menu {
 		display: block;
 		float: right;
-		width: 69%;
+		width: 29%;
 	}
 	.header-cont {
 		display: none;
@@ -7864,9 +7870,6 @@ a.expert-call {
 	.why-us-block {
 		width: 400px;	
 	}
-	.why-us-block-img {
-		/* display: none; */
-	}
 	.developers-grid h2,.discount2-grid h2,.why-us-grid h2{
 		font-size: 28px!important;
 	}
@@ -7880,7 +7883,7 @@ a.expert-call {
 	.ipoteka-content h2 {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 40px;
-		color: #141414;
+		color: #3155aa;
 		margin-top: 10px;
 	}
 	.ipoteka-content p {
@@ -7905,8 +7908,6 @@ a.expert-call {
 	.ipoteka-banks {
 		width: 414px;
 	}
-
-
 	section.bus-tour {
 		min-width: 414px;
 	}
@@ -7930,8 +7931,6 @@ a.expert-call {
 		top: 70px;
 		right: -100px;
 	}
-
-
 	section.developers {
 		position: relative;
 		display: block;
@@ -8294,7 +8293,7 @@ a.expert-call {
 	}
 	.flat-content-name input {
 		display: inline-block;
-		width: 40%;
+		/* width: 40%; */
 		height: 30px;
 		margin: 0 auto;
 		line-height: 30px;
@@ -8501,7 +8500,7 @@ a.expert-call {
 		transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
-		height: 320px;
+		height: 350px;
 		border-radius: 10px;
 		z-index: 99999;
 		overflow: hidden;
@@ -8551,7 +8550,7 @@ a.expert-call {
 	}
 	.flaty-content-name input {
 		display: inline-block;
-		width: 48%;
+		/* width: 48%; */
 		height: 30px;
 		margin: 0 auto;
 		line-height: 30px;
@@ -9363,30 +9362,36 @@ a.expert-call {
 	.close_modal {
 	    position: absolute;
 	    padding: 1px 9px 4px 9px;
-	    top: -20px;
-	    right: -20px;
+	    top: 5px;
+	    right: 5px;
 	    cursor: pointer;
 	    color: #fff;
 	    font-family: 'Qanelas-Regular', sans-serif;
 	    background: #3a5eb0;
 	    text-align: center;
-	    border-radius: 50%;
+			border-radius: 50%;
+			z-index: 99999;
 	}
 	.close-quiz {
 		display: none;
 	}
 }
 
-
+@media screen and (max-width: 540px) {
+	.header {
+		min-width: 414px;
+	}
+	.header-grid {
+		width: 414px;
+	}
+}
 @media screen and (max-width: 414px) {
+
 	.header {
 		min-width: 375px;
 	}
 	.header-grid {
 		width: 375px;
-	}
-	.header-menu {
-		width: 38%;
 	}
 	.header-menu .pro {
 		position: relative;
@@ -9410,7 +9415,7 @@ a.expert-call {
 	.header-menu {
 		display: block;
 		float: right;
-		width: 69%;
+		width: 29%;
 	}
 	.header-cont {
 		display: none;
@@ -9450,7 +9455,7 @@ a.expert-call {
 		color: #fff;
 		text-align: center;
 		display: block;
-		width: 260px;
+		width: 230px;
 		margin: 0 auto;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 700;
@@ -9538,7 +9543,7 @@ a.expert-call {
 	.ipoteka-content h2 {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 40px;
-		color: #141414;
+		color: #3155aa;
 		margin-top: 10px;
 	}
 	.ipoteka-content p {
@@ -9684,10 +9689,229 @@ a.expert-call {
 		text-align: center;
 	}
 }
-/* @media (max-width: 640px) { body {font-size:1.2rem;} } 
-@media (min-width: 640px) { body {font-size:1rem;} } 
-@media (min-width:960px) { body {font-size:1.2rem;} } 
-@media (min-width:1100px) { body {font-size:1.5rem;} } */
+@media screen and (max-width: 390px) {
+	.flaty-content{
+		padding: 20px;
+	}
+	.close_modal{
+		top:10px;
+		right: 20px;
+	}
+	.team-name{
+		max-width: 70%;
+		margin: 0 auto;
+	}
+	.slider-content h1{
+		font-size: 24px;
+		margin-top: 40px;
+
+	}
+	.bus-tour-content,.catalog-content{
+		margin-left: 20px;
+	}
+	#tour{
+		height: 285px;
+	}
+	#catalog{
+		height: 390px;
+	}
+	.cheap-modal,.quiz{
+		width: 310px;
+	}
+	.slider-content h1{
+		width: 310px;
+	}
+	.s1,.s2,.s3{
+		padding:0;
+	}
+	.s3{
+		margin-top: 50px;
+	}
+	.header {
+		min-width: 300px;
+	}
+	.header-grid {
+		width: 300px;
+	}
+	.header-menu {
+		width: 100%;
+	}
+	.header-menu {
+		display: block;
+		float: right;
+		width: 35%;
+	}
+	.header-cont {
+		display: none;
+	}
+	section.intro {
+		min-width: 320px;
+	}
+	.slider-content {
+		width: 320px;
+	}
+
+	section.discount2 {
+		min-width: 320px;
+	}
+	.discount2-grid {
+		width: 320px;
+	}
+	.discount2-objects {
+		width: 320px;
+	}
+
+	section.catalog {
+		min-width: 320px;
+	}
+	.catalog-grid {
+		width: 320px;
+	}
+	.catalog-content p {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 18px;
+		color: #c6c7c9;
+		margin-top: 18px;
+	}
+	.catalog-content p strong {
+		color: #ffc813;
+	}
+
+	section.why-us {
+		min-width: 320px;
+	}
+	.why-us-grid {
+		width: 320px;
+	}
+	.why-us-block {
+		width: 320px;	
+	}
+	.why-us-block-img {
+		display: none;
+	}
+	section.ipoteka {
+		min-width: 320px;
+		background-position: 68%;
+		
+	}
+	.ipoteka-grid {
+		width: 320px;
+	}
+
+	section.ipoteka-partners {
+		min-width: 320px;
+	}
+	.ipoteka-banks {
+		width: 320px;
+	}
+
+
+	section.bus-tour {
+		min-width: 320px;
+	}
+	.bus-tour-grid {
+		width: 320px;
+	}
+	section.developers {
+		position: relative;
+		display: block;
+		width: 100%;
+		min-width: 320px;
+		margin: 0 auto;
+		overflow: hidden;
+		padding-top: 80px;
+		padding-bottom: 40px;
+	}
+	.developers-grid {
+		position: relative;
+		display: block;
+		width: 320px;
+		margin: 0 auto;
+	}
+	.developers-block {
+		position: relative;
+		display: block;
+		width: 320px;
+		overflow: hidden;
+		padding-bottom: 30px;
+	}
+	.partners-unit {
+		display: inline-block;
+		width: 32.5%;
+		height: 100px;
+		margin-top: 1.5%;
+	}
+	.ipoteka-content a{
+		width: 250px;
+	}
+
+
+	section.about-us {
+		min-width: 320px;
+	}
+	.about-us-grid {
+		width: 320px;
+	}
+	footer.footer {
+		min-width: 320px;
+	}
+	.footer-grid {
+		width: 300px;
+	}
+	.footer-social {
+		width: 45%;
+		margin: 0 auto;
+	}
+	.footer-contact p{
+		margin-left: 0;
+	}
+	.footer-center .soc-small img {
+		margin-top: -15px;
+	}
+
+	.footer-center img {
+		display: block;
+		margin-left: -50px;
+	}
+	.footer-left {
+		display: none;
+		width: 28%;
+		overflow: hidden;
+	}
+	.footer-right {
+		float: right;
+		width: 90%;
+		overflow: hidden;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 330px) {
+	.hidden-menu li a{
+		font-size: 18px;
+	}
+	.help-me img {
+		max-width: 55px;
+		display: block;
+		margin: 0 auto;
+	}
+	.help-me p{
+		font-size: 16px;
+		margin-top: 10px;
+	}
+	.messanger-block{
+		width: 80px;
+	}
+	.menu-whatsapp,.menu-viber{
+		width: 30px;
+	}
+	.address-block a{
+		font-size: 18px;
+	}
+	.header-menu {
+		width: 40%;
+	}
+}
 @media (min-width:1140px) { 
 	.about-descr { 
 		-webkit-column-count: 2;
