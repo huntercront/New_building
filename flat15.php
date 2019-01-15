@@ -23,7 +23,7 @@ else {
 		// Сюда введите Ваш email
 		$emailTo = 'lidsinvest@yandex.ru';
 
-		$subject = 'Скачка ЖК Новый город';
+		$subject = 'Скачка ЖК Гусева, 46';
 		$subject = '=?utf-8?b?'. base64_encode($subject) .'?=';
 		$headers = "Content-type: text/plain; charset=\"utf-8\"\r\n";
 		$headers .= "From: ". $fromName ." <". $fromMail ."> \r\n";

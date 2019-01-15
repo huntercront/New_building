@@ -546,7 +546,7 @@ span.equa-middle {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url("../images/object1.png") no-repeat;
+	background: url("../images/HC/aviator.jpg") no-repeat;
 	background-size: cover;
 	height: 300px;
 	width: 100%;
@@ -560,7 +560,7 @@ span.equa-middle {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url("../images/object2.png") no-repeat;
+	background: url("../images/HC/atlant.jpg") no-repeat;
 	background-size: cover;
 	height: 300px;
 	width: 100%;
@@ -570,7 +570,7 @@ span.equa-middle {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url("../images/object3.png") no-repeat;
+	background: url("../images/HC/Volga_life.jpg") no-repeat;
 	background-size: cover;
 	height: 300px;
 	width: 100%;
@@ -580,7 +580,7 @@ span.equa-middle {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url("../images/object4.png") no-repeat;
+	background: url("../images/HC/Home_planet.jpg") no-repeat;
 	background-size: cover;
 	height: 300px;
 	width: 100%;
@@ -590,7 +590,7 @@ span.equa-middle {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url("../images/object5.png") no-repeat;
+	background: url("../images/HC/Zarechnaya_21.jpg") no-repeat;
 	background-size: cover;
 	height: 300px;
 	width: 100%;
@@ -600,7 +600,7 @@ span.equa-middle {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url("../images/object6.png") no-repeat;
+	background: url("../images/HC/Illidium.jpg") no-repeat;
 	background-size: cover;
 	height: 300px;
 	width: 100%;
@@ -610,7 +610,7 @@ span.equa-middle {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url("../images/object7.png") no-repeat;
+	background: url("../images/HC/Colcevaya.jpg") no-repeat;
 	background-size: cover;
 	height: 300px;
 	width: 100%;
@@ -620,7 +620,7 @@ span.equa-middle {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url("../images/object8.png") no-repeat;
+	background: url("../images/HC/Melody.jpg") no-repeat;
 	background-size: cover;
 	height: 300px;
 	width: 100%;
@@ -630,7 +630,7 @@ span.equa-middle {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url("../images/object9.png") no-repeat;
+	background: url("../images/HC/Medoviy.jpg") no-repeat;
 	background-size: cover;
 	height: 300px;
 	width: 100%;
@@ -640,7 +640,7 @@ span.equa-middle {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url("../images/object10.png") no-repeat;
+	background: url("../images/HC/Michurinsciy.jpg") no-repeat;
 	background-size: cover;
 	height: 300px;
 	width: 100%;
@@ -650,7 +650,7 @@ span.equa-middle {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url("../images/object11.png") no-repeat;
+	background: url("../images/HC/New_taun.jpg") no-repeat;
 	background-size: cover;
 	height: 300px;
 	width: 100%;
@@ -660,7 +660,37 @@ span.equa-middle {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url("../images/object12.png") no-repeat;
+	background: url("../images/HC/New_kvartal.jpg") no-repeat;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	transition: all 0.5s ease 0s;
+}
+.discount2-object-img13 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url("../images/HC/Ryabeevskoe.jpg") no-repeat;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	transition: all 0.5s ease 0s;
+}
+.discount2-object-img14 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url("../images/HC/uz.jpg") no-repeat;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	transition: all 0.5s ease 0s;
+}
+.discount2-object-img15 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url("../images/HC/Guseva_46.jpg") no-repeat;
 	background-size: cover;
 	height: 300px;
 	width: 100%;
@@ -707,6 +737,18 @@ span.equa-middle {
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img12 {
+	transform: scale(1.2);
+	transition: all 0.5s ease 0s;
+}
+.discount2-object:hover .discount2-object-img13 {
+	transform: scale(1.2);
+	transition: all 0.5s ease 0s;
+}
+.discount2-object:hover .discount2-object-img14 {
+	transform: scale(1.2);
+	transition: all 0.5s ease 0s;
+}
+.discount2-object:hover .discount2-object-img15 {
 	transform: scale(1.2);
 	transition: all 0.5s ease 0s;
 }
@@ -1285,6 +1327,7 @@ section.ipoteka-partners {
 	margin-top: 10px;
 	text-align: center;
 }
+
 .ipoteka-bank span.minimal-pay {
 	display: block;
 	font-family: 'Open Sans', sans-serif;
@@ -4329,7 +4372,7 @@ a.expert-call {
     -ms-transform: rotate(45deg);
 }
 
-.popup9, .popup10, .popup11, .popup12, .popup13, .popup14, .popup15, .popup16, .popup17, .popup18, .popup19 {
+.popup9, .popup10, .popup11, .popup12, .popup13, .popup14, .popup15, .popup16, .popup17, .popup18, .popup19, .popup20, .popup21, .popup22, .popup23 {
     display: inline-block;
     left: 50%;
     opacity: 0;
@@ -4354,19 +4397,19 @@ a.expert-call {
 	background-color: #fff;
 	padding: 20px;
 }
-.popup9 h3, .popup10 h3, .popup11 h3, .popup12 h3, .popup13 h3, .popup14 h3, .popup15 h3, .popup16 h3, .popup17 h3, .popup18 h3, .popup19 h3 {
+.popup9 h3, .popup10 h3, .popup11 h3, .popup12 h3, .popup13 h3, .popup14 h3, .popup15 h3, .popup16 h3, .popup17 h3, .popup18 h3, .popup19 h3, .popup20 h3, .popup21 h3, .popup22 h3, .popup23 h3 {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	text-align: center;
 }
-.popup9 p, .popup10 p, .popup11 p, .popup12 p, .popup13 p, .popup14 p, .popup15 p, .popup16 p, .popup17 p, .popup18 p, .popup19 p {
+.popup9 p, .popup10 p, .popup11 p, .popup12 p, .popup13 p, .popup14 p, .popup15 p, .popup16 p, .popup17 p, .popup18 p, .popup19 p, .popup20 p, .popup21 p, .popup22 p, .popup23 p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	margin-top: 20px;
 	text-align: center;
 }
-.popup8 a, .popup9 a, .popup10 a, .popup11 a, .popup12 a, .popup13 a, .popup14 a, .popup15 a, .popup16 a, .popup17 a, .popup18 a, .popup19 a {
+.popup8 a, .popup9 a, .popup10 a, .popup11 a, .popup12 a, .popup13 a, .popup14 a, .popup15 a, .popup16 a, .popup17 a, .popup18 a, .popup19 a, .popup20 a, .popup21 a, .popup22 a, .popup23 a {
 	display: block;
 	width: 200px;
 	height: 40px;
@@ -4595,6 +4638,9 @@ a.expert-call {
 
 
 @media screen and (max-width: 979px) {
+	.percent-extra-style{
+		font-size: 22px!important;
+	}
 	.header {
 		min-width: 768px;
 	}
@@ -4852,6 +4898,9 @@ a.expert-call {
 
 
 @media screen and (max-width: 767px) {
+	.percent-extra-style{
+		font-size: 26px!important;
+	}
 	.header {
 		min-width: 736px;
 	}

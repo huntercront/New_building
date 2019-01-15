@@ -23,13 +23,13 @@ else {
 		// Сюда введите Ваш email
 		$emailTo = 'lidsinvest@yandex.ru';
 
-		$subject = 'Скачка ЖК Аэросити';
+		$subject = 'Скачка Иллидиум 2';
 		$subject = '=?utf-8?b?'. base64_encode($subject) .'?=';
 		$headers = "Content-type: text/plain; charset=\"utf-8\"\r\n";
 		$headers .= "From: ". $fromName ." <". $fromMail ."> \r\n";
 
 		// тело письма
-		$body = "Получено письмо с сайта новострой-спб.рф\n\nИмя: $name\nТелефон: $phone";
+		$body = "Получено письмо с сайта новостройки Совинвест\n\nИмя: $name\nТелефон: $phone";
 		$mail = mail($emailTo, $subject, $body, $headers, '-f'. $fromMail );
 
 
