@@ -7,7 +7,7 @@ $(document).ready(function () {
 	centerPadding: '5px',
   slidesToScroll: 1,
   autoplay: true,
-	autoplaySpeed: 5500,
+	autoplaySpeed: 3000,
 	responsive: [
 	{
       breakpoint: 1199,

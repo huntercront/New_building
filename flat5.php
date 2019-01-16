@@ -21,7 +21,7 @@ else {
 		$fromName = 'sovinvest.pro';
 
 		// Сюда введите Ваш email
-		$emailTo = 'lidsinvest@yandex.ru';
+		$emailTo = 'cront20097@gmail.com';
 
 		$subject = 'Скачка ЖК Заречная, 21';
 		$subject = '=?utf-8?b?'. base64_encode($subject) .'?=';
@@ -29,7 +29,7 @@ else {
 		$headers .= "From: ". $fromName ." <". $fromMail ."> \r\n";
 
 		// тело письма
-		$body = "Получено письмо с сайта новострой-спб.рф\n\nИмя: $name\nТелефон: $phone";
+		$body = "Получено письмо с сайта Новостройки Тверь\n\nИмя: $name\nТелефон: $phone";
 		$mail = mail($emailTo, $subject, $body, $headers, '-f'. $fromMail );
 
 

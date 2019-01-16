@@ -52,7 +52,7 @@ $pams<br>";
 	
 	
 	
-	$to = "lidsinvest@yandex.ru"; 
+	$to = "cront20097@gmail.com"; 
 
 // емайл получателя 
  

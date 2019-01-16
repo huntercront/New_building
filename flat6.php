@@ -21,7 +21,7 @@ else {
 		$fromName = 'sovinvest.pro';
 
 		// Сюда введите Ваш email
-		$emailTo = 'lidsinvest@yandex.ru';
+		$emailTo = 'cront20097@gmail.com';
 
 		$subject = 'Скачка Иллидиум 2';
 		$subject = '=?utf-8?b?'. base64_encode($subject) .'?=';

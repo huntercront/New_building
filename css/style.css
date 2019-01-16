@@ -29,6 +29,12 @@ font-style: normal;
 	margin: 0;
 	padding: 0;
 }
+.main-navigation:before {
+	display: block;
+	content: "";
+	height: 80px;
+	margin: -80px 0 0;
+}
 .about-descr{
 	margin-top: 60px;
 	margin-bottom: 40px;
@@ -1272,8 +1278,10 @@ section.ipoteka-partners {
 	padding-bottom: 10px;
 }
 .ipoteka-banks {
-	position: relative;
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -1463,14 +1471,17 @@ section.developers {
 }
 .developers-block {
 	position: relative;
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	width: 1200px;
 	overflow: hidden;
 	padding-bottom: 30px;
 }
 .partners-unit {
 	display: inline-block;
-	width: 14%;
+	width: 15%;
 	height: 100px;
 	margin-top: 1.5%;
 }
@@ -1673,19 +1684,25 @@ footer.footer {
 	text-decoration: none;
 }
 .footer-social {
-	width: 25%;
+	width: 180px;
+	display: flex;
+	justify-content: flex-start;
 }
 .footer-social a {
 	display: inline-block;
-	width: 48%;
-}
-.footer-social a img {
-	width: 85%;
+	/* width: 48%; */
 }
 .soc-small img {
-	display: block;
-	width: 75% !important;
-	margin-top: -46px;
+	opacity: .5;
+	width: 30px;
+	height: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: 300ms;
+}
+.soc-small img:hover{
+	opacity: 1;
+
 }
 .soc-left {
 	margin-left: -20px;
@@ -2605,7 +2622,6 @@ footer.footer {
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
-	background-color: #8996ab;
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -2828,7 +2844,6 @@ footer.footer {
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
-	background-color: #8996ab;
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -3048,7 +3063,6 @@ footer.footer {
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
-	background-color: #8996ab;
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -4151,7 +4165,6 @@ input.radio:checked + label:after {
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
-	background-color: #5e6c8a;
 	overflow: hidden;
 }
 .expert-photo img {
@@ -4602,7 +4615,7 @@ a.expert-call {
 	}
 	.developers-block {
 		position: relative;
-		display: block;
+
 		width: 980px;
 		overflow: hidden;
 		padding-bottom: 30px;
@@ -4629,9 +4642,6 @@ a.expert-call {
 	}
 	.footer-grid {
 		width: 980px;
-	}
-	.footer-social {
-		width: 30.5%;
 	}
 }
 
@@ -4840,7 +4850,6 @@ a.expert-call {
 	}
 	.developers-block {
 		position: relative;
-		display: block;
 		width: 768px;
 		overflow: hidden;
 		padding-bottom: 30px;
@@ -4874,9 +4883,6 @@ a.expert-call {
 	}
 	.footer-grid {
 		width: 768px;
-	}
-	.footer-social {
-		width: 44%;
 	}
 	.footer-center {
 		width: 34%;
@@ -5108,7 +5114,6 @@ a.expert-call {
 	}
 	.developers-block {
 		position: relative;
-		display: block;
 		width: 736px;
 		overflow: hidden;
 		padding-bottom: 30px;
@@ -5142,9 +5147,6 @@ a.expert-call {
 	}
 	.footer-grid {
 		width: 736px;
-	}
-	.footer-social {
-		width: 47%;
 	}
 	.footer-center {
 		width: 34%;
@@ -5901,7 +5903,6 @@ a.expert-call {
 		border-radius: 50%;
 		width: 150px;
 		height: 150px;
-		background-color: #8996ab;
 		margin: 0 auto;
 		margin-top: 30px;
 		margin-bottom: 30px;
@@ -6124,7 +6125,6 @@ a.expert-call {
 		border-radius: 50%;
 		width: 150px;
 		height: 150px;
-		background-color: #8996ab;
 		margin: 0 auto;
 		margin-top: 30px;
 		margin-bottom: 30px;
@@ -6342,7 +6342,6 @@ a.expert-call {
 		border-radius: 50%;
 		width: 150px;
 		height: 150px;
-		background-color: #8996ab;
 		margin: 0 auto;
 		margin-top: 30px;
 		margin-bottom: 30px;
@@ -7709,7 +7708,6 @@ a.expert-call {
 	}
 	.developers-block {
 		position: relative;
-		display: block;
 		width: 667px;
 		overflow: hidden;
 		padding-bottom: 30px;
@@ -7743,9 +7741,6 @@ a.expert-call {
 	}
 	.footer-grid {
 		width: 667px;
-	}
-	.footer-social {
-		width: 52%;
 	}
 	.footer-center {
 		width: 34%;
@@ -8008,7 +8003,6 @@ a.expert-call {
 	}
 	.developers-block {
 		position: relative;
-		display: block;
 		width: 414px;
 		overflow: hidden;
 		padding-bottom: 30px;
@@ -8044,7 +8038,7 @@ a.expert-call {
 		width: 414px;
 	}
 	.footer-social {
-		width: 32%;
+		justify-content: center;
 		margin: 0 auto;
 	}
 	.footer-center .soc-small img {
@@ -8813,7 +8807,6 @@ a.expert-call {
 		border-radius: 50%;
 		width: 150px;
 		height: 150px;
-		background-color: #8996ab;
 		margin: 0 auto;
 		margin-top: 30px;
 		margin-bottom: 30px;
@@ -9035,7 +9028,6 @@ a.expert-call {
 		border-radius: 50%;
 		width: 150px;
 		height: 150px;
-		background-color: #8996ab;
 		margin: 0 auto;
 		margin-top: 30px;
 		margin-bottom: 30px;
@@ -9253,7 +9245,6 @@ a.expert-call {
 		border-radius: 50%;
 		width: 150px;
 		height: 150px;
-		background-color: #8996ab;
 		margin: 0 auto;
 		margin-top: 30px;
 		margin-bottom: 30px;
@@ -9671,7 +9662,6 @@ a.expert-call {
 	}
 	.developers-block {
 		position: relative;
-		display: block;
 		width: 375px;
 		overflow: hidden;
 		padding-bottom: 30px;
@@ -9710,10 +9700,6 @@ a.expert-call {
 	}
 	.footer-grid {
 		width: 375px;
-	}
-	.footer-social {
-		width: 32%;
-		margin: 0 auto;
 	}
 	.footer-center .soc-small img {
 		margin-top: -15px;
@@ -9899,14 +9885,13 @@ a.expert-call {
 	}
 	.developers-block {
 		position: relative;
-		display: block;
 		width: 320px;
 		overflow: hidden;
 		padding-bottom: 30px;
 	}
 	.partners-unit {
 		display: inline-block;
-		width: 32.5%;
+		width: 50%;
 		height: 100px;
 		margin-top: 1.5%;
 	}
@@ -9926,10 +9911,6 @@ a.expert-call {
 	}
 	.footer-grid {
 		width: 300px;
-	}
-	.footer-social {
-		width: 45%;
-		margin: 0 auto;
 	}
 	.footer-contact p{
 		margin-left: 0;
@@ -9958,6 +9939,11 @@ a.expert-call {
 @media screen and (max-width: 330px) {
 	.hidden-menu li a{
 		font-size: 18px;
+	}
+	.about-descr{
+		max-width: 300px;
+		text-align: center;
+		margin-left: 5px;
 	}
 	.help-me img {
 		max-width: 55px;
