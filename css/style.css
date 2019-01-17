@@ -25,18 +25,26 @@ font-style: normal;
 } */
 @import "lable.css";
 * {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 .labble-for_check{
 	margin-left: 50px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
 	width: 95%;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 	margin-top:20px;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: relative;
 }
 .quiz-content .labble-for_check{
@@ -44,22 +52,36 @@ font-style: normal;
 }
 .flaty-content .labble-for_check{
 	margin-left: 0px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
 	width: 95%;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 	margin-top:20px;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: relative;
 }
 .quiz2-field .labble-for_check{
 	margin-left: 0px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
 	width: 95%;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 	margin-top:20px;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	position: relative;
 }
 .main-navigation:before {
@@ -114,7 +136,8 @@ font-style: normal;
 	min-width: 1200px;
 	margin: 0 auto;
 	height: 80px;
-	box-shadow: 0px 4px 8px #999;
+	-webkit-box-shadow: 0px 4px 8px #999;
+	        box-shadow: 0px 4px 8px #999;
 	z-index: 999;
 	background-color: #fff;
 }
@@ -221,7 +244,8 @@ font-style: normal;
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 }
 .header-logo img {
 	display: block;
@@ -282,7 +306,8 @@ section.intro {
 	z-index: 1;
 }
 section.intro video {
-	object-fit: cover;
+	-o-object-fit: cover;
+	   object-fit: cover;
 	display: block;
 	width: 100%;
 	height: 100vh;
@@ -295,7 +320,8 @@ section.intro video {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-45%);
+	-webkit-transform: translateX(-50%) translateY(-45%);
+	        transform: translateX(-50%) translateY(-45%);
 	z-index: 10;
 }
 .s1, .s2, .s3, .s4 {
@@ -336,7 +362,8 @@ section.intro video {
 	background-color: #3155aa;
 	color: #fff;
 	text-align: center;
-	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
 	display: block;
 	width: 240px;
 	margin: 0 auto;
@@ -346,7 +373,9 @@ section.intro video {
 	text-decoration: none;
 	border-radius: 50px;
 	margin-top: 40px;
-	box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.7);
+	        box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.7);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	overflow: hidden;
 }
@@ -356,20 +385,25 @@ section.intro video {
     width: 30px;
     height: 300px;
     background: #fff;
-    animation-delay: 0.05s;
+    -webkit-animation-delay: 0.05s;
+            animation-delay: 0.05s;
     position: absolute;
     left: -40px;
     top: -150px;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     transition: all 0.1s;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
     -khtml-transition: all 0.1s;
     -ms-transition: all 0.1s;
-    animation-name: slideme;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: slideme;
+            animation-name: slideme;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -377,6 +411,16 @@ section.intro video {
     -khtml-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
 }
+@-webkit-keyframes slideme {
+  0% {
+    left: -30px;
+    margin-left: 0px; }
+  30% {
+    left: 110%;
+    margin-left: 80px; }
+  100% {
+    left: 110%;
+    margin-left: 80px; } }
 @keyframes slideme {
   0% {
     left: -30px;
@@ -393,7 +437,8 @@ section.intro video {
 	background-color: #3155aa;
 	color: #fff;
 	text-align: center;
-	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
 	display: block;
 	width: 180px;
 	margin: 0 auto;
@@ -403,12 +448,16 @@ section.intro video {
 	text-decoration: none;
 	border-radius: 50px;
 	margin-top: 40px;
-	box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.7);
+	        box-shadow: 0px 3px 16px rgba(0, 0, 0, 0.7);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	overflow: hidden;
 }
 .intro a:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 section.why-us {
@@ -579,6 +628,7 @@ span.equa-middle {
 	background-color: #fff;
 	overflow: hidden;
 	cursor: pointer;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img1 {
@@ -589,10 +639,13 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img1 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img2 {
@@ -603,6 +656,7 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img3 {
@@ -613,6 +667,7 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img4 {
@@ -623,6 +678,7 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img5 {
@@ -633,6 +689,7 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img6 {
@@ -643,6 +700,7 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img7 {
@@ -653,6 +711,7 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img8 {
@@ -663,6 +722,7 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img9 {
@@ -673,6 +733,7 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img10 {
@@ -683,6 +744,7 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img11 {
@@ -693,6 +755,7 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img12 {
@@ -703,6 +766,7 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img13 {
@@ -713,6 +777,7 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img14 {
@@ -723,6 +788,7 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object-img15 {
@@ -733,62 +799,91 @@ span.equa-middle {
 	background-size: cover;
 	height: 300px;
 	width: 100%;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img2 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img3 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img4 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img5 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img6 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img7 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img8 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img9 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img10 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img11 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img12 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img13 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img14 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-object:hover .discount2-object-img15 {
-	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	        transform: scale(1.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-mask {
@@ -933,7 +1028,9 @@ span.equa-middle {
 	color: #3155aa;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -942,7 +1039,9 @@ span.equa-middle {
 	line-height: 35px;
 }
 .discount-object-content a:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 
@@ -1004,7 +1103,9 @@ span.equa-middle {
 	background-size: 40%;
 }
 .discount-object-content-hidden a:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount-object-content-hidden-img {
@@ -1066,7 +1167,9 @@ span.equa-middle {
 	font-weight: 700;
 	font-size: 16px;
 	margin: 0 auto;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	text-decoration: none;
 	text-align: center;
@@ -1074,7 +1177,9 @@ span.equa-middle {
 	overflow: hidden;
 }
 .discount2-download:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-download img {
@@ -1107,11 +1212,15 @@ span.equa-middle {
 }
 
 .discount2-content a {
-	box-shadow: 2px 2px 10px #000;
+	-webkit-box-shadow: 2px 2px 10px #000;
+	        box-shadow: 2px 2px 10px #000;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .discount2-content a:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 
@@ -1200,11 +1309,15 @@ section.catalog {
 	width: 100%;
 }
 .catalog-content a {
-	box-shadow: 2px 2px 10px #000;
+	-webkit-box-shadow: 2px 2px 10px #000;
+	        box-shadow: 2px 2px 10px #000;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .catalog-content a:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 
@@ -1215,6 +1328,7 @@ section.ipoteka {
 	min-width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
+	background: -webkit-gradient(linear,left top, right top,color-stop(35%, rgba(255, 255, 255, 0.5)), color-stop(75%, rgba(253, 237, 237,0))),url("../images/ipoteka-bg.jpg");
 	background: linear-gradient(to right,rgba(255, 255, 255, 0.5) 35%, rgba(253, 237, 237,0) 75%),url("../images/ipoteka-bg.jpg");
 	background-size: cover;
 	background-position: 100%;
@@ -1259,8 +1373,11 @@ section.ipoteka {
 	text-decoration: none;
 	border-radius: 50px;
 	margin-top: 40px;
-	box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2),
+	-webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2),
 				-4px 0px 7px rgba(0, 0, 0, 0.2);
+	        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2),
+				-4px 0px 7px rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	margin-top: 40px;
 	text-transform: uppercase;
@@ -1274,21 +1391,26 @@ section.ipoteka {
     width: 30px;
     height: 300px;
     background: #fff;
-    animation-delay: 0.05s;
+    -webkit-animation-delay: 0.05s;
+            animation-delay: 0.05s;
     position: absolute;
     left: -40px;
     top: -150px;
     z-index: 555;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     transition: all 0.1s;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
     -khtml-transition: all 0.1s;
     -ms-transition: all 0.1s;
-    animation-name: slideme;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: slideme;
+            animation-name: slideme;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -1297,7 +1419,9 @@ section.ipoteka {
     -ms-transform: rotate(45deg);
 }
 .ipoteka-content a:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 
@@ -1311,10 +1435,17 @@ section.ipoteka-partners {
 	padding-bottom: 10px;
 }
 .ipoteka-banks {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 1200px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -1328,7 +1459,9 @@ section.ipoteka-partners {
 	margin-left: 2.3%;
 	margin-bottom: 2%;
 	border-radius: 10px;
-	box-shadow: 2px 2px 8px #eaeaea,
+	-webkit-box-shadow: 2px 2px 8px #eaeaea,
+				-2px -2px 8px #eaeaea;
+	        box-shadow: 2px 2px 8px #eaeaea,
 				-2px -2px 8px #eaeaea;
 }
 .ipoteka-bank img {
@@ -1409,7 +1542,9 @@ section.ipoteka-partners {
 .ipoteka-sum-block-content {
 	padding: 40px;
 	border-radius: 10px;
-	box-shadow: 2px 2px 8px #eaeaea,
+	-webkit-box-shadow: 2px 2px 8px #eaeaea,
+				-2px -2px 8px #eaeaea;
+	        box-shadow: 2px 2px 8px #eaeaea,
 				-2px -2px 8px #eaeaea;
 }
 .ipoteka-sum-block h3 {
@@ -1467,15 +1602,20 @@ section.ipoteka-partners {
 	text-decoration: none;
 	border-radius: 50px;
 	margin-top: 40px;
-	box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2),
+	-webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2),
 				-4px 0px 7px rgba(0, 0, 0, 0.2);
+	        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2),
+				-4px 0px 7px rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	margin-top: 40px;
 	text-transform: uppercase;
 }
 
 .ipoteka-partners a:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 section.developers {
@@ -1504,10 +1644,17 @@ section.developers {
 }
 .developers-block {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 1200px;
 	overflow: hidden;
 	padding-bottom: 30px;
@@ -1570,7 +1717,9 @@ section.bus-tour {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -1581,7 +1730,9 @@ section.bus-tour {
 
 }
 .bus-tour-content a:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .bus-tour-content a::before {
@@ -1590,21 +1741,26 @@ section.bus-tour {
     width: 30px;
     height: 300px;
     background: #fff;
-    animation-delay: 0.05s;
+    -webkit-animation-delay: 0.05s;
+            animation-delay: 0.05s;
     position: absolute;
     left: -40px;
     top: -150px;
     z-index: 555;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     transition: all 0.1s;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
     -khtml-transition: all 0.1s;
     -ms-transition: all 0.1s;
-    animation-name: slideme;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: slideme;
+            animation-name: slideme;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -1719,8 +1875,12 @@ footer.footer {
 }
 .footer-social {
 	width: 180px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
 }
 .footer-social a {
 	display: inline-block;
@@ -1732,6 +1892,7 @@ footer.footer {
 	height: 30px;
 	margin-left: 5px;
 	margin-right: 5px;
+	-webkit-transition: 300ms;
 	transition: 300ms;
 }
 .soc-small img:hover{
@@ -1817,6 +1978,7 @@ footer.footer {
 	font-weight: 500;
 	font-size: 22px;
 	text-decoration: none;
+	-webkit-transition: 300ms;
 	transition: 300ms;
 }
 .hidden-menu li a:hover {
@@ -1882,7 +2044,8 @@ footer.footer {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 500px;
 	height: 620px;
@@ -1898,7 +2061,8 @@ footer.footer {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 500px;
 	height: 620px;
@@ -2024,6 +2188,7 @@ label.labelcheck {
 	font-weight: 700;
 	color: #395daf;
 	text-decoration: underline;
+	-webkit-transition: 300ms;
 	transition: 300ms;
 }
 .privacy-policy:hover{
@@ -2050,13 +2215,16 @@ input[type=checkbox]:checked + label:before {
 	height: 50px;
 	line-height: 40px;
 	border-radius: 20px;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	border: 2px solid #3155aa;
 	background-color: #3155aa;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	margin-top: 30px;
 	overflow: hidden;
@@ -2075,9 +2243,6 @@ input[type=checkbox]:checked + label:before {
     visibility: hidden;
     z-index: 99999;
     -webkit-transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -ms-transition: opacity .5s;
-    -o-transition: opacity .5s;
     transition: opacity .5s;
 }
 .popup2 {
@@ -2090,14 +2255,8 @@ input[type=checkbox]:checked + label:before {
     visibility: hidden;
     z-index: 999999;
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transition: opacity .5s, top .5s;
-    -moz-transition: opacity .5s, top .5s;
-    -ms-transition: opacity .5s, top .5s;
-    -o-transition: opacity .5s, top .5s;
     transition: opacity .5s, top .5s;
     width: 500px;
 	border-radius: 10px;
@@ -2135,7 +2294,8 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 800px;
 	height: 450px;
@@ -2150,7 +2310,8 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 800px;
 	height: 450px;
@@ -2245,19 +2406,24 @@ input[type=checkbox]:checked + label:before {
 	height: 50px;
 	line-height: 40px;
 	border-radius: 20px;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	border: 2px solid #3155aa;
 	background-color: #3155aa;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	margin-top: 40px;
 	z-index: 0;
 }
 .form-flat .sub-flat:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .overlay {
@@ -2272,9 +2438,6 @@ input[type=checkbox]:checked + label:before {
     visibility: hidden;
     z-index: 9999;
     -webkit-transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -ms-transition: opacity .5s;
-    -o-transition: opacity .5s;
     transition: opacity .5s;
 }
 .popup4 {
@@ -2287,14 +2450,8 @@ input[type=checkbox]:checked + label:before {
     visibility: hidden;
     z-index: 999999;
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transition: opacity .5s, top .5s;
-    -moz-transition: opacity .5s, top .5s;
-    -ms-transition: opacity .5s, top .5s;
-    -o-transition: opacity .5s, top .5s;
     transition: opacity .5s, top .5s;
     width: 500px;
 	border-radius: 10px;
@@ -2319,13 +2476,16 @@ input[type=checkbox]:checked + label:before {
 	height: 40px;
 	line-height: 35px;
 	border-radius: 20px;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	border: 2px solid #3155aa;
 	background-color: #3155aa;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -2334,7 +2494,9 @@ input[type=checkbox]:checked + label:before {
 	text-decoration: none;
 }
 .popup4 a:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .close_modal {
@@ -2357,7 +2519,8 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 800px;
 	height: 440px;
@@ -2371,7 +2534,8 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 800px;
 	height: 440px;
@@ -2467,18 +2631,23 @@ input[type=checkbox]:checked + label:before {
 	height: 50px;
 	line-height: 40px;
 	border-radius: 20px;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	border: 2px solid #3155aa;
 	background-color: #3155aa;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	margin-top: 30px;
 }
 .form-flaty .sub-flaty:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .overlay {
@@ -2493,9 +2662,6 @@ input[type=checkbox]:checked + label:before {
     visibility: hidden;
     z-index: 9999;
     -webkit-transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -ms-transition: opacity .5s;
-    -o-transition: opacity .5s;
     transition: opacity .5s;
 }
 .popup8 {
@@ -2508,14 +2674,8 @@ input[type=checkbox]:checked + label:before {
     visibility: hidden;
     z-index: 999999;
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transition: opacity .5s, top .5s;
-    -moz-transition: opacity .5s, top .5s;
-    -ms-transition: opacity .5s, top .5s;
-    -o-transition: opacity .5s, top .5s;
     transition: opacity .5s, top .5s;
     width: 500px;
 	height: 200px;
@@ -2555,7 +2715,8 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 500px;
 	height: 600px;
@@ -2571,7 +2732,8 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 500px;
 	height: 600px;
@@ -2641,13 +2803,16 @@ input[type=checkbox]:checked + label:before {
 	height: 50px;
 	line-height: 40px;
 	border-radius: 20px;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	border: 2px solid #3155aa;
 	background-color: #3155aa;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	margin-top: 30px;
 	overflow: hidden;
@@ -2666,9 +2831,6 @@ input[type=checkbox]:checked + label:before {
     visibility: hidden;
     z-index: 99999;
     -webkit-transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -ms-transition: opacity .5s;
-    -o-transition: opacity .5s;
     transition: opacity .5s;
 }
 .popup5 {
@@ -2681,14 +2843,8 @@ input[type=checkbox]:checked + label:before {
     visibility: hidden;
     z-index: 999999;
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transition: opacity .5s, top .5s;
-    -moz-transition: opacity .5s, top .5s;
-    -ms-transition: opacity .5s, top .5s;
-    -o-transition: opacity .5s, top .5s;
     transition: opacity .5s, top .5s;
     width: 500px;
 	border-radius: 10px;
@@ -2726,7 +2882,8 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 500px;
 	height: 600px;
@@ -2742,7 +2899,8 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 500px;
 	height: 600px;
@@ -2808,13 +2966,16 @@ input[type=checkbox]:checked + label:before {
 	height: 50px;
 	line-height: 40px;
 	border-radius: 20px;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	border: 2px solid #3155aa;
 	background-color: #3155aa;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	margin-top: 30px;
 }
@@ -2831,9 +2992,6 @@ input[type=checkbox]:checked + label:before {
     visibility: hidden;
     z-index: 99999;
     -webkit-transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -ms-transition: opacity .5s;
-    -o-transition: opacity .5s;
     transition: opacity .5s;
 }
 .popup6 {
@@ -2846,14 +3004,8 @@ input[type=checkbox]:checked + label:before {
     visibility: hidden;
     z-index: 999999;
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transition: opacity .5s, top .5s;
-    -moz-transition: opacity .5s, top .5s;
-    -ms-transition: opacity .5s, top .5s;
-    -o-transition: opacity .5s, top .5s;
     transition: opacity .5s, top .5s;
     width: 500px;
 	border-radius: 10px;
@@ -2891,7 +3043,8 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 500px;
 	height: 600px;
@@ -2907,7 +3060,8 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 500px;
 	height: 600px;
@@ -2973,13 +3127,16 @@ input[type=checkbox]:checked + label:before {
 	height: 50px;
 	line-height: 40px;
 	border-radius: 20px;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	border: 2px solid #3155aa;
 	background-color: #3155aa;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	margin-top: 20px;
 }
@@ -2996,9 +3153,6 @@ input[type=checkbox]:checked + label:before {
     visibility: hidden;
     z-index: 99999;
     -webkit-transition: opacity .5s;
-    -moz-transition: opacity .5s;
-    -ms-transition: opacity .5s;
-    -o-transition: opacity .5s;
     transition: opacity .5s;
 }
 .popup7 {
@@ -3011,14 +3165,8 @@ input[type=checkbox]:checked + label:before {
     visibility: hidden;
     z-index: 999999;
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transition: opacity .5s, top .5s;
-    -moz-transition: opacity .5s, top .5s;
-    -ms-transition: opacity .5s, top .5s;
-    -o-transition: opacity .5s, top .5s;
     transition: opacity .5s, top .5s;
     width: 500px;
 	border-radius: 10px;
@@ -3085,7 +3233,8 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 500px;
 	border-radius: 10px;
@@ -3265,20 +3414,25 @@ input[type=checkbox]:checked + label:before {
 	width: 150px;
 	height: 40px;
 	border-radius: 20px;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	border: 2px solid #3155aa;
 	background-color: #3155aa;
 	color: #fff;
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	margin-top: 30px;
 	margin-bottom: 15px;
 }
 .quiz2-buttons button:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .send-button {
@@ -3291,20 +3445,25 @@ input[type=checkbox]:checked + label:before {
     width: 30px;
     height: 300px;
     background: #fff;
-    animation-delay: 0.05s;
+    -webkit-animation-delay: 0.05s;
+            animation-delay: 0.05s;
     position: absolute;
     left: -40px;
     top: -150px;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     transition: all 0.1s;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
     -khtml-transition: all 0.1s;
     -ms-transition: all 0.1s;
-    animation-name: slideme;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: slideme;
+            animation-name: slideme;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -3322,20 +3481,25 @@ input[type=checkbox]:checked + label:before {
     width: 30px;
     height: 300px;
     background: #fff;
-    animation-delay: 0.05s;
+    -webkit-animation-delay: 0.05s;
+            animation-delay: 0.05s;
     position: absolute;
     left: -40px;
     top: -150px;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     transition: all 0.1s;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
     -khtml-transition: all 0.1s;
     -ms-transition: all 0.1s;
-    animation-name: slideme;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: slideme;
+            animation-name: slideme;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -3387,7 +3551,8 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 700px;
 	border-radius: 10px;
@@ -3414,7 +3579,8 @@ input[type=checkbox]:checked + label:before {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
@@ -3449,7 +3615,8 @@ input[type=checkbox]:checked + label:before {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
@@ -3470,7 +3637,8 @@ input[type=checkbox]:checked + label:before {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 700px;
 	height: 600px;
@@ -3601,6 +3769,7 @@ input.radio + label:after {
   line-height: 22px;
   text-align: center;
   opacity: 0;
+  -webkit-transition: .2s;
   transition: .2s;
   color: #fff;
 }
@@ -3648,19 +3817,24 @@ input.radio:checked + label:after {
 	width: 150px;
 	height: 40px;
 	border-radius: 20px;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	border: 2px solid #3155aa;
 	background-color: #f2f2f2;
 	margin-right: 20px;
 	color: #3155aa;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	overflow: hidden;
 }
 .quiz-buttons button:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .quiz-buttons button.next-button {
@@ -3674,20 +3848,25 @@ input.radio:checked + label:after {
     width: 30px;
     height: 300px;
     background: #fff;
-    animation-delay: 0.05s;
+    -webkit-animation-delay: 0.05s;
+            animation-delay: 0.05s;
     position: absolute;
     left: -40px;
     top: -150px;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     transition: all 0.1s;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
     -khtml-transition: all 0.1s;
     -ms-transition: all 0.1s;
-    animation-name: slideme;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: slideme;
+            animation-name: slideme;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -3701,20 +3880,25 @@ input.radio:checked + label:after {
     width: 30px;
     height: 300px;
     background: #fff;
-    animation-delay: 0.05s;
+    -webkit-animation-delay: 0.05s;
+            animation-delay: 0.05s;
     position: absolute;
     left: -40px;
     top: -150px;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     transition: all 0.1s;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
     -khtml-transition: all 0.1s;
     -ms-transition: all 0.1s;
-    animation-name: slideme;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: slideme;
+            animation-name: slideme;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -3735,11 +3919,15 @@ input.radio:checked + label:after {
     margin-left: 80px; } }
 
 .quiz-buttons button.next-button:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .quiz-buttons button.send-button:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .quiz-buttons button.send-button {
@@ -3747,14 +3935,17 @@ input.radio:checked + label:after {
 	width: 300px;
 	display: inline-block;
 	border-radius: 20px;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	border: 2px solid #3155aa;
 	background-color: #395daf;
 	margin-right: 20px;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 .step2, .step3, .step4, .step5, .step6, .step7, .step8 {
@@ -3957,7 +4148,8 @@ a.expert-call {
 	display: block;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	width: 700px;
 	border-radius: 10px;
@@ -3983,7 +4175,8 @@ a.expert-call {
 	position: absolute;
 	left: 50%;
 	top: 50%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
@@ -4021,21 +4214,26 @@ a.expert-call {
     width: 30px;
     height: 300px;
     background: #fff;
-    animation-delay: 0.05s;
+    -webkit-animation-delay: 0.05s;
+            animation-delay: 0.05s;
     position: absolute;
     left: -40px;
     top: -150px;
     z-index: 555;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     transition: all 0.1s;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
     -khtml-transition: all 0.1s;
     -ms-transition: all 0.1s;
-    animation-name: slideme;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: slideme;
+            animation-name: slideme;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -4049,21 +4247,26 @@ a.expert-call {
     width: 30px;
     height: 300px;
     background: #fff;
-    animation-delay: 0.05s;
+    -webkit-animation-delay: 0.05s;
+            animation-delay: 0.05s;
     position: absolute;
     left: -40px;
     top: -150px;
     z-index: 555;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     transition: all 0.1s;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
     -khtml-transition: all 0.1s;
     -ms-transition: all 0.1s;
-    animation-name: slideme;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: slideme;
+            animation-name: slideme;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -4077,21 +4280,26 @@ a.expert-call {
     width: 30px;
     height: 300px;
     background: #fff;
-    animation-delay: 0.05s;
+    -webkit-animation-delay: 0.05s;
+            animation-delay: 0.05s;
     position: absolute;
     left: -40px;
     top: -150px;
     z-index: 555;
-    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
     transition: all 0.1s;
     -moz-transition: all 0.1s;
     -webkit-transition: all 0.1s;
     -o-transition: all 0.1s;
     -khtml-transition: all 0.1s;
     -ms-transition: all 0.1s;
-    animation-name: slideme;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: slideme;
+            animation-name: slideme;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
@@ -4110,14 +4318,8 @@ a.expert-call {
     visibility: hidden;
     z-index: 999999;
     -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     -webkit-transition: opacity .5s, top .5s;
-    -moz-transition: opacity .5s, top .5s;
-    -ms-transition: opacity .5s, top .5s;
-    -o-transition: opacity .5s, top .5s;
     transition: opacity .5s, top .5s;
     width: 500px;
 	height: 200px;
@@ -4143,13 +4345,16 @@ a.expert-call {
 	height: 40px;
 	line-height: 35px;
 	border-radius: 20px;
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
 	border: 2px solid #3155aa;
 	background-color: #3155aa;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 15px;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -4158,7 +4363,9 @@ a.expert-call {
 	text-decoration: none;
 }
 .popup4 a:hover {
-	box-shadow: none;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
 
@@ -4193,7 +4400,8 @@ a.expert-call {
 	top: 50%;
 	width: 70%;
 	height: 80%;
-	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	        transform: translateX(-50%) translateY(-50%);
 	background-color: #fff;
 	overflow-y: scroll;
 	padding: 25px;
@@ -4433,8 +4641,11 @@ a.expert-call {
 		text-decoration: none;
 		border-radius: 50px;
 		margin-top: 40px;
-		box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
+		-webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
 					-4px 0px 7px rgba(0, 0, 0, 0.8);
+		        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
+					-4px 0px 7px rgba(0, 0, 0, 0.8);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		overflow: hidden;
 	}
@@ -4470,6 +4681,7 @@ a.expert-call {
 		background-color: #fff;
 		overflow: hidden;
 		cursor: pointer;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 	.discount-object-content p.metro::before {
@@ -4688,8 +4900,11 @@ a.expert-call {
 		text-decoration: none;
 		border-radius: 50px;
 		margin-top: 40px;
-		box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
+		-webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
 					-4px 0px 7px rgba(0, 0, 0, 0.8);
+		        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
+					-4px 0px 7px rgba(0, 0, 0, 0.8);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		overflow: hidden;
 	}
@@ -4713,6 +4928,7 @@ a.expert-call {
 		background-color: #fff;
 		overflow: hidden;
 		cursor: pointer;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 	.discount-object-content-hidden-info p {
@@ -4786,7 +5002,9 @@ a.expert-call {
 		margin-left: 2.3%;
 		margin-bottom: 2%;
 		border-radius: 10px;
-		box-shadow: 2px 2px 8px #eaeaea,
+		-webkit-box-shadow: 2px 2px 8px #eaeaea,
+					-2px -2px 8px #eaeaea;
+		        box-shadow: 2px 2px 8px #eaeaea,
 					-2px -2px 8px #eaeaea;
 	}
 	section.ipoteka-partners {
@@ -5036,7 +5254,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 630px;
 		height: 330px;
@@ -5051,7 +5270,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 630px;
 		height: 330px;
@@ -5131,19 +5351,24 @@ a.expert-call {
 		height: 50px;
 		line-height: 40px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		margin-top: 0px;
 		z-index: 0;
 	}
 	.form-flat .sub-flat:hover {
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 	.overlay {
@@ -5158,9 +5383,6 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 9999;
 	    -webkit-transition: opacity .5s;
-	    -moz-transition: opacity .5s;
-	    -ms-transition: opacity .5s;
-	    -o-transition: opacity .5s;
 	    transition: opacity .5s;
 	}
 	.popup4 {
@@ -5173,14 +5395,8 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 999999;
 	    -webkit-transform: translate(-50%, -50%);
-	    -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	    -o-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 	    -webkit-transition: opacity .5s, top .5s;
-	    -moz-transition: opacity .5s, top .5s;
-	    -ms-transition: opacity .5s, top .5s;
-	    -o-transition: opacity .5s, top .5s;
 	    transition: opacity .5s, top .5s;
 	    width: 450px;
 		border-radius: 10px;
@@ -5205,13 +5421,16 @@ a.expert-call {
 		height: 40px;
 		line-height: 35px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		margin: 0 auto;
 		margin-top: 20px;
@@ -5220,7 +5439,9 @@ a.expert-call {
 		text-decoration: none;
 	}
 	.popup4 a:hover {
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 	.close_modal {
@@ -5242,7 +5463,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 630px;
 		height: 330px;
@@ -5256,7 +5478,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 630px;
 		height: 330px;
@@ -5336,18 +5559,23 @@ a.expert-call {
 		height: 40px;
 		line-height: 30px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		margin-top: 0px;
 	}
 	.form-flaty .sub-flaty:hover {
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 	.overlay {
@@ -5362,9 +5590,6 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 9999;
 	    -webkit-transition: opacity .5s;
-	    -moz-transition: opacity .5s;
-	    -ms-transition: opacity .5s;
-	    -o-transition: opacity .5s;
 	    transition: opacity .5s;
 	}
 	.popup8 {
@@ -5377,14 +5602,8 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 999999;
 	    -webkit-transform: translate(-50%, -50%);
-	    -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	    -o-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 	    -webkit-transition: opacity .5s, top .5s;
-	    -moz-transition: opacity .5s, top .5s;
-	    -ms-transition: opacity .5s, top .5s;
-	    -o-transition: opacity .5s, top .5s;
 	    transition: opacity .5s, top .5s;
 	    width: 450px;
 		height: 200px;
@@ -5423,7 +5642,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 450px;
 		height: 350px;
@@ -5438,7 +5658,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 450px;
 		height: 350px;
@@ -5506,13 +5727,16 @@ a.expert-call {
 		height: 50px;
 		line-height: 40px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		margin-top: 30px;
 		overflow: hidden;
@@ -5531,9 +5755,6 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 99999;
 	    -webkit-transition: opacity .5s;
-	    -moz-transition: opacity .5s;
-	    -ms-transition: opacity .5s;
-	    -o-transition: opacity .5s;
 	    transition: opacity .5s;
 	}
 	.popup5 {
@@ -5546,14 +5767,8 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 999999;
 	    -webkit-transform: translate(-50%, -50%);
-	    -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	    -o-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 	    -webkit-transition: opacity .5s, top .5s;
-	    -moz-transition: opacity .5s, top .5s;
-	    -ms-transition: opacity .5s, top .5s;
-	    -o-transition: opacity .5s, top .5s;
 	    transition: opacity .5s, top .5s;
 	    width: 450px;
 		border-radius: 10px;
@@ -5591,7 +5806,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 450px;
 		height: 350px;
@@ -5606,7 +5822,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 450px;
 		height: 350px;
@@ -5670,13 +5887,16 @@ a.expert-call {
 		height: 50px;
 		line-height: 40px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		margin-top: 30px;
 	}
@@ -5693,9 +5913,6 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 99999;
 	    -webkit-transition: opacity .5s;
-	    -moz-transition: opacity .5s;
-	    -ms-transition: opacity .5s;
-	    -o-transition: opacity .5s;
 	    transition: opacity .5s;
 	}
 	.popup6 {
@@ -5708,14 +5925,8 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 999999;
 	    -webkit-transform: translate(-50%, -50%);
-	    -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	    -o-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 	    -webkit-transition: opacity .5s, top .5s;
-	    -moz-transition: opacity .5s, top .5s;
-	    -ms-transition: opacity .5s, top .5s;
-	    -o-transition: opacity .5s, top .5s;
 	    transition: opacity .5s, top .5s;
 	    width: 450px;
 		border-radius: 10px;
@@ -5753,7 +5964,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 450px;
 		height: 350px;
@@ -5768,7 +5980,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 450px;
 		height: 350px;
@@ -5832,13 +6045,16 @@ a.expert-call {
 		height: 50px;
 		line-height: 40px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		margin-top: 30px;
 	}
@@ -5855,9 +6071,6 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 99999;
 	    -webkit-transition: opacity .5s;
-	    -moz-transition: opacity .5s;
-	    -ms-transition: opacity .5s;
-	    -o-transition: opacity .5s;
 	    transition: opacity .5s;
 	}
 	.popup7 {
@@ -5870,14 +6083,8 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 999999;
 	    -webkit-transform: translate(-50%, -50%);
-	    -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	    -o-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 	    -webkit-transition: opacity .5s, top .5s;
-	    -moz-transition: opacity .5s, top .5s;
-	    -ms-transition: opacity .5s, top .5s;
-	    -o-transition: opacity .5s, top .5s;
 	    transition: opacity .5s, top .5s;
 	    width: 450px;
 		border-radius: 10px;
@@ -5914,7 +6121,8 @@ a.expert-call {
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
@@ -5935,7 +6143,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
 		height: 380px;
@@ -6068,6 +6277,7 @@ a.expert-call {
 	  line-height: 22px;
 	  text-align: center;
 	  opacity: 0;
+	  -webkit-transition: .2s;
 	  transition: .2s;
 	  color: #fff;
 	  border: 1px solid;
@@ -6117,19 +6327,24 @@ a.expert-call {
 		width: 120px;
 		height: 30px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #f2f2f2;
 		margin-right: 20px;
 		color: #3155aa;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 16px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		overflow: hidden;
 	}
 	.quiz-buttons button:hover {
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 	.quiz-buttons button.next-button {
@@ -6143,20 +6358,25 @@ a.expert-call {
 	    width: 30px;
 	    height: 300px;
 	    background: #fff;
-	    animation-delay: 0.05s;
+	    -webkit-animation-delay: 0.05s;
+	            animation-delay: 0.05s;
 	    position: absolute;
 	    left: -40px;
 	    top: -150px;
-	    animation-timing-function: ease-in-out;
+	    -webkit-animation-timing-function: ease-in-out;
+	            animation-timing-function: ease-in-out;
 	    transition: all 0.1s;
 	    -moz-transition: all 0.1s;
 	    -webkit-transition: all 0.1s;
 	    -o-transition: all 0.1s;
 	    -khtml-transition: all 0.1s;
 	    -ms-transition: all 0.1s;
-	    animation-name: slideme;
-	    animation-duration: 3s;
-	    animation-iteration-count: infinite;
+	    -webkit-animation-name: slideme;
+	            animation-name: slideme;
+	    -webkit-animation-duration: 3s;
+	            animation-duration: 3s;
+	    -webkit-animation-iteration-count: infinite;
+	            animation-iteration-count: infinite;
 	    transform: rotate(45deg);
 	    -moz-transform: rotate(45deg);
 	    -webkit-transform: rotate(45deg);
@@ -6170,20 +6390,25 @@ a.expert-call {
 	    width: 30px;
 	    height: 300px;
 	    background: #fff;
-	    animation-delay: 0.05s;
+	    -webkit-animation-delay: 0.05s;
+	            animation-delay: 0.05s;
 	    position: absolute;
 	    left: -40px;
 	    top: -150px;
-	    animation-timing-function: ease-in-out;
+	    -webkit-animation-timing-function: ease-in-out;
+	            animation-timing-function: ease-in-out;
 	    transition: all 0.1s;
 	    -moz-transition: all 0.1s;
 	    -webkit-transition: all 0.1s;
 	    -o-transition: all 0.1s;
 	    -khtml-transition: all 0.1s;
 	    -ms-transition: all 0.1s;
-	    animation-name: slideme;
-	    animation-duration: 3s;
-	    animation-iteration-count: infinite;
+	    -webkit-animation-name: slideme;
+	            animation-name: slideme;
+	    -webkit-animation-duration: 3s;
+	            animation-duration: 3s;
+	    -webkit-animation-iteration-count: infinite;
+	            animation-iteration-count: infinite;
 	    transform: rotate(45deg);
 	    -moz-transform: rotate(45deg);
 	    -webkit-transform: rotate(45deg);
@@ -6194,11 +6419,15 @@ a.expert-call {
 
 
 	.quiz-buttons button.next-button:hover {
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 	.quiz-buttons button.send-button:hover {
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 	.quiz-buttons button.send-button {
@@ -6206,14 +6435,17 @@ a.expert-call {
 		width: 200px;
 		display: inline-block;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #395daf;
 		margin-right: 20px;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 16px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 	.step2, .step3, .step4, .step5, .step6, .step7, .step8 {
@@ -6416,7 +6648,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
 		border-radius: 10px;
@@ -6465,7 +6698,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
 		border-radius: 10px;
@@ -6647,20 +6881,25 @@ a.expert-call {
 		width: 150px;
 		height: 30px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		margin: 0 auto;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 16px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		margin-top: 30px;
 		margin-bottom: 15px;
 	}
 	.quiz2-buttons button:hover {
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 	.send-button {
@@ -6673,20 +6912,25 @@ a.expert-call {
 	    width: 30px;
 	    height: 300px;
 	    background: #fff;
-	    animation-delay: 0.05s;
+	    -webkit-animation-delay: 0.05s;
+	            animation-delay: 0.05s;
 	    position: absolute;
 	    left: -40px;
 	    top: -150px;
-	    animation-timing-function: ease-in-out;
+	    -webkit-animation-timing-function: ease-in-out;
+	            animation-timing-function: ease-in-out;
 	    transition: all 0.1s;
 	    -moz-transition: all 0.1s;
 	    -webkit-transition: all 0.1s;
 	    -o-transition: all 0.1s;
 	    -khtml-transition: all 0.1s;
 	    -ms-transition: all 0.1s;
-	    animation-name: slideme;
-	    animation-duration: 3s;
-	    animation-iteration-count: infinite;
+	    -webkit-animation-name: slideme;
+	            animation-name: slideme;
+	    -webkit-animation-duration: 3s;
+	            animation-duration: 3s;
+	    -webkit-animation-iteration-count: infinite;
+	            animation-iteration-count: infinite;
 	    transform: rotate(45deg);
 	    -moz-transform: rotate(45deg);
 	    -webkit-transform: rotate(45deg);
@@ -6704,20 +6948,25 @@ a.expert-call {
 	    width: 30px;
 	    height: 300px;
 	    background: #fff;
-	    animation-delay: 0.05s;
+	    -webkit-animation-delay: 0.05s;
+	            animation-delay: 0.05s;
 	    position: absolute;
 	    left: -40px;
 	    top: -150px;
-	    animation-timing-function: ease-in-out;
+	    -webkit-animation-timing-function: ease-in-out;
+	            animation-timing-function: ease-in-out;
 	    transition: all 0.1s;
 	    -moz-transition: all 0.1s;
 	    -webkit-transition: all 0.1s;
 	    -o-transition: all 0.1s;
 	    -khtml-transition: all 0.1s;
 	    -ms-transition: all 0.1s;
-	    animation-name: slideme;
-	    animation-duration: 3s;
-	    animation-iteration-count: infinite;
+	    -webkit-animation-name: slideme;
+	            animation-name: slideme;
+	    -webkit-animation-duration: 3s;
+	            animation-duration: 3s;
+	    -webkit-animation-iteration-count: infinite;
+	            animation-iteration-count: infinite;
 	    transform: rotate(45deg);
 	    -moz-transform: rotate(45deg);
 	    -webkit-transform: rotate(45deg);
@@ -6769,7 +7018,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 700px;
 		border-radius: 10px;
@@ -6796,7 +7046,8 @@ a.expert-call {
 		position: absolute;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
@@ -6878,8 +7129,11 @@ a.expert-call {
 		text-decoration: none;
 		border-radius: 50px;
 		margin-top: 40px;
-		box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
+		-webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
 					-4px 0px 7px rgba(0, 0, 0, 0.8);
+		        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
+					-4px 0px 7px rgba(0, 0, 0, 0.8);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		overflow: hidden;
 	}
@@ -6946,7 +7200,9 @@ a.expert-call {
 		margin-left: 2.3%;
 		margin-bottom: 2%;
 		border-radius: 10px;
-		box-shadow: 2px 2px 8px #eaeaea,
+		-webkit-box-shadow: 2px 2px 8px #eaeaea,
+					-2px -2px 8px #eaeaea;
+		        box-shadow: 2px 2px 8px #eaeaea,
 					-2px -2px 8px #eaeaea;
 	}
 	section.ipoteka-partners {
@@ -7062,32 +7318,53 @@ a.expert-call {
 	}
 	.labble-for_check{
 		margin-left: 30px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 		width: 80%;
-		justify-content: flex-start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 		margin-top:20px;
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		position: relative;
 	}
 	.quiz-content .labble-for_check{
 		/* margin-left: 30px; */
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 		width: 80%;
-		justify-content: flex-start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 		margin-top:20px;
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		position: relative;
 	}
 	.flaty-content .labble-for_check{
 		margin-left: 0px;
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-wrap: nowrap;
+		-ms-flex-wrap: nowrap;
+		    flex-wrap: nowrap;
 		width: 100%;
-		justify-content: flex-start;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
 		margin-top:20px;
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 		position: relative;
 	}
 	.form-comfort input{
@@ -7176,6 +7453,7 @@ a.expert-call {
 		font-weight: 700;
 		color: #395daf;
 		text-decoration: underline;
+		-webkit-transition: 300ms;
 		transition: 300ms;
 	}
 	.quiz2-field .privacy-policy {
@@ -7189,6 +7467,7 @@ a.expert-call {
 		font-weight: 700;
 		color: #395daf;
 		text-decoration: underline;
+		-webkit-transition: 300ms;
 		transition: 300ms;
 	}
 
@@ -7210,7 +7489,8 @@ a.expert-call {
 		position: absolute;
 		display: block;
 		left: 2%;
-		transform: translateX(0%) translateY(-50%);
+		-webkit-transform: translateX(0%) translateY(-50%);
+		        transform: translateX(0%) translateY(-50%);
 		margin-left: 0 !important;
 		width: 30%;
 	}
@@ -7275,8 +7555,11 @@ a.expert-call {
 		text-decoration: none;
 		border-radius: 50px;
 		margin-top: 40px;
-		box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
+		-webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
 					-4px 0px 7px rgba(0, 0, 0, 0.8);
+		        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
+					-4px 0px 7px rgba(0, 0, 0, 0.8);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		overflow: hidden;
 	}
@@ -7300,6 +7583,7 @@ a.expert-call {
 		background-color: #fff;
 		overflow: hidden;
 		cursor: pointer;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 
@@ -7370,7 +7654,9 @@ a.expert-call {
 		margin-left: 2.3%;
 		margin-bottom: 2%;
 		border-radius: 10px;
-		box-shadow: 2px 2px 8px #eaeaea,
+		-webkit-box-shadow: 2px 2px 8px #eaeaea,
+					-2px -2px 8px #eaeaea;
+		        box-shadow: 2px 2px 8px #eaeaea,
 					-2px -2px 8px #eaeaea;
 	}
 	section.ipoteka-partners {
@@ -7463,7 +7749,9 @@ a.expert-call {
 		width: 414px;
 	}
 	.footer-social {
-		justify-content: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
 		margin: 0 auto;
 	}
 	.footer-center .soc-small img {
@@ -7552,13 +7840,16 @@ a.expert-call {
 		height: 40px;
 		line-height: 30px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		overflow: hidden;
 		margin: 0 auto;
@@ -7576,9 +7867,6 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 99999;
 	    -webkit-transition: opacity .5s;
-	    -moz-transition: opacity .5s;
-	    -ms-transition: opacity .5s;
-	    -o-transition: opacity .5s;
 	    transition: opacity .5s;
 	}
 	.popup2 {
@@ -7591,14 +7879,8 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 999999;
 	    -webkit-transform: translate(-50%, -50%);
-	    -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	    -o-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 	    -webkit-transition: opacity .5s, top .5s;
-	    -moz-transition: opacity .5s, top .5s;
-	    -ms-transition: opacity .5s, top .5s;
-	    -o-transition: opacity .5s, top .5s;
 	    transition: opacity .5s, top .5s;
 	    width: 450px;
 		border-radius: 10px;
@@ -7636,7 +7918,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
 		height: 450px;
@@ -7651,7 +7934,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
 		height: 450px;
@@ -7730,19 +8014,24 @@ a.expert-call {
 		height: 50px;
 		line-height: 40px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		margin-top: 0px;
 		z-index: 0;
 	}
 	.form-flat .sub-flat:hover {
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 	.overlay {
@@ -7757,9 +8046,6 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 9999;
 	    -webkit-transition: opacity .5s;
-	    -moz-transition: opacity .5s;
-	    -ms-transition: opacity .5s;
-	    -o-transition: opacity .5s;
 	    transition: opacity .5s;
 	}
 	.popup4 {
@@ -7772,14 +8058,8 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 999999;
 	    -webkit-transform: translate(-50%, -50%);
-	    -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	    -o-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 	    -webkit-transition: opacity .5s, top .5s;
-	    -moz-transition: opacity .5s, top .5s;
-	    -ms-transition: opacity .5s, top .5s;
-	    -o-transition: opacity .5s, top .5s;
 	    transition: opacity .5s, top .5s;
 	    width: 450px;
 		border-radius: 10px;
@@ -7804,13 +8084,16 @@ a.expert-call {
 		height: 40px;
 		line-height: 35px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		margin: 0 auto;
 		margin-top: 20px;
@@ -7819,7 +8102,9 @@ a.expert-call {
 		text-decoration: none;
 	}
 	.popup4 a:hover {
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 	.close_modal {
@@ -7841,7 +8126,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
 		height: 320px;
@@ -7855,7 +8141,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
 		height: 350px;
@@ -7935,18 +8222,23 @@ a.expert-call {
 		height: 40px;
 		line-height: 30px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		margin-top: 0px;
 	}
 	.form-flaty .sub-flaty:hover {
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 	.overlay {
@@ -7961,9 +8253,6 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 9999;
 	    -webkit-transition: opacity .5s;
-	    -moz-transition: opacity .5s;
-	    -ms-transition: opacity .5s;
-	    -o-transition: opacity .5s;
 	    transition: opacity .5s;
 	}
 	.popup8 {
@@ -7976,14 +8265,8 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 999999;
 	    -webkit-transform: translate(-50%, -50%);
-	    -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	    -o-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 	    -webkit-transition: opacity .5s, top .5s;
-	    -moz-transition: opacity .5s, top .5s;
-	    -ms-transition: opacity .5s, top .5s;
-	    -o-transition: opacity .5s, top .5s;
 	    transition: opacity .5s, top .5s;
 	    width: 450px;
 		height: 200px;
@@ -8022,7 +8305,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
 		height: 400px;
@@ -8037,7 +8321,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
 		height: 400px;
@@ -8104,13 +8389,16 @@ a.expert-call {
 		height: 50px;
 		line-height: 40px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		margin-top: 30px;
 		overflow: hidden;
@@ -8129,9 +8417,6 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 99999;
 	    -webkit-transition: opacity .5s;
-	    -moz-transition: opacity .5s;
-	    -ms-transition: opacity .5s;
-	    -o-transition: opacity .5s;
 	    transition: opacity .5s;
 	}
 	.popup5 {
@@ -8144,14 +8429,8 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 999999;
 	    -webkit-transform: translate(-50%, -50%);
-	    -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	    -o-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 	    -webkit-transition: opacity .5s, top .5s;
-	    -moz-transition: opacity .5s, top .5s;
-	    -ms-transition: opacity .5s, top .5s;
-	    -o-transition: opacity .5s, top .5s;
 	    transition: opacity .5s, top .5s;
 	    width: 450px;
 		border-radius: 10px;
@@ -8189,7 +8468,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
 		height: 350px;
@@ -8204,7 +8484,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
 		height: 350px;
@@ -8267,13 +8548,16 @@ a.expert-call {
 		height: 50px;
 		line-height: 40px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		margin-top: 30px;
 	}
@@ -8290,9 +8574,6 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 99999;
 	    -webkit-transition: opacity .5s;
-	    -moz-transition: opacity .5s;
-	    -ms-transition: opacity .5s;
-	    -o-transition: opacity .5s;
 	    transition: opacity .5s;
 	}
 	.popup6 {
@@ -8305,14 +8586,8 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 999999;
 	    -webkit-transform: translate(-50%, -50%);
-	    -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	    -o-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 	    -webkit-transition: opacity .5s, top .5s;
-	    -moz-transition: opacity .5s, top .5s;
-	    -ms-transition: opacity .5s, top .5s;
-	    -o-transition: opacity .5s, top .5s;
 	    transition: opacity .5s, top .5s;
 	    width: 450px;
 		border-radius: 10px;
@@ -8350,7 +8625,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
 		height: 350px;
@@ -8365,7 +8641,8 @@ a.expert-call {
 		display: block;
 		left: 50%;
 		top: 50%;
-		transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		        transform: translateX(-50%) translateY(-50%);
 		background-color: #fff;
 		width: 350px;
 		height: 350px;
@@ -8429,13 +8706,16 @@ a.expert-call {
 		height: 50px;
 		line-height: 40px;
 		border-radius: 20px;
-		box-shadow: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
 		border: 2px solid #3155aa;
 		background-color: #3155aa;
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
-		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		margin-top: 30px;
 	}
@@ -8452,9 +8732,6 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 99999;
 	    -webkit-transition: opacity .5s;
-	    -moz-transition: opacity .5s;
-	    -ms-transition: opacity .5s;
-	    -o-transition: opacity .5s;
 	    transition: opacity .5s;
 	}
 	.popup7 {
@@ -8467,14 +8744,8 @@ a.expert-call {
 	    visibility: hidden;
 	    z-index: 999999;
 	    -webkit-transform: translate(-50%, -50%);
-	    -moz-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	    -o-transform: translate(-50%, -50%);
 	    transform: translate(-50%, -50%);
 	    -webkit-transition: opacity .5s, top .5s;
-	    -moz-transition: opacity .5s, top .5s;
-	    -ms-transition: opacity .5s, top .5s;
-	    -o-transition: opacity .5s, top .5s;
 	    transition: opacity .5s, top .5s;
 	    width: 450px;
 		border-radius: 10px;
@@ -8515,14 +8786,20 @@ a.expert-call {
 	.main_video{
 		display: none!important;
 		/* background:url("../images/mobile_main_bg.jpg"); */
-		background-size: cover;
 	}
 	.intro-mask{
+		background-color: transparent!important;
+	}
+	.intro{
+		background:-webkit-gradient(linear,left top, right top,color-stop(35%, rgba(0, 0, 0, 0.5)), color-stop(75%, rgba(0, 0, 0, 0.5))),url("../images/mobile_main_bg.jpg");
 		background:linear-gradient(to right,rgba(0, 0, 0, 0.5) 35%, rgba(0, 0, 0, 0.5) 75%),url("../images/mobile_main_bg.jpg");
 		background-size: cover;
-					animation: 10s ease-in-out 0s infinite alternate move_bg;
+		background-repeat: no-repeat;
+					-webkit-animation: 10s linear 0s infinite alternate move_bg;
+					        animation: 10s linear 0s infinite alternate move_bg;
 	}
-        @keyframes move_bg { from { background-size: 100%;} to { background-size: 125%; }  }
+        @-webkit-keyframes move_bg { from { background-size: 135%;} to { background-size: 170%; }  }
+        @keyframes move_bg { from { background-size: 135%;} to { background-size: 170%; }  }
 	.header {
 		min-width: 414px;
 	}
@@ -8553,7 +8830,8 @@ a.expert-call {
 		position: absolute;
 		display: block;
 		left: 2%;
-		transform: translateX(0%) translateY(-50%);
+		-webkit-transform: translateX(0%) translateY(-50%);
+		        transform: translateX(0%) translateY(-50%);
 		margin-left: 0 !important;
 		width: 30%;
 	}
@@ -8608,8 +8886,11 @@ a.expert-call {
 		text-decoration: none;
 		border-radius: 50px;
 		margin-top: 40px;
-		box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
+		-webkit-box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
 					-4px 0px 7px rgba(0, 0, 0, 0.8);
+		        box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.8),
+					-4px 0px 7px rgba(0, 0, 0, 0.8);
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 		overflow: hidden;
 	}
@@ -8633,6 +8914,7 @@ a.expert-call {
 		background-color: #fff;
 		overflow: hidden;
 		cursor: pointer;
+		-webkit-transition: all 0.5s ease 0s;
 		transition: all 0.5s ease 0s;
 	}
 
@@ -8704,7 +8986,9 @@ a.expert-call {
 		margin-left: 2.3%;
 		margin-bottom: 2%;
 		border-radius: 10px;
-		box-shadow: 2px 2px 8px #eaeaea,
+		-webkit-box-shadow: 2px 2px 8px #eaeaea,
+					-2px -2px 8px #eaeaea;
+		        box-shadow: 2px 2px 8px #eaeaea,
 					-2px -2px 8px #eaeaea;
 	}
 	section.ipoteka-partners {
