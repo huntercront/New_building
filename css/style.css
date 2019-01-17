@@ -23,11 +23,21 @@ src: url('../fonts/ProbaPro/ProbaProMedium.otf');
 font-weight: normal;
 font-style: normal;
 } */
-
+@import "lable.css";
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+.labble-for_check{
+	margin-left: 50px;
+	display: flex;
+	flex-wrap: nowrap;
+	width: 95%;
+	justify-content: flex-start;
+	margin-top:20px;
+	align-items: center;
+	position: relative;
 }
 .main-navigation:before {
 	display: block;
@@ -1494,7 +1504,7 @@ section.bus-tour {
 	display: block;
 	width: 100%;
 	min-width: 1200px;
-	height: 360px;
+	height: 370px;
 	margin: 0 auto;
 	overflow: hidden;
 	background: url("../images/tour.jpg") no-repeat;
@@ -1511,6 +1521,7 @@ section.bus-tour {
 	display: block;
 	float: left;
 	width: 55%;
+	margin-bottom: 50px;
 }
 .bus-tour-content h2 {
 	font-family: 'Roboto', sans-serif;
@@ -1930,49 +1941,72 @@ footer.footer {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 }
-.form-call input[type="checkbox"] {
+input[type="checkbox"] {
     display: none;
 }
-.form-call input[type=checkbox] + label:before {
+input[type=checkbox] + label:before {
     position: absolute;
     content: "";
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
     font-size: 20px;
     color: #dee2eb;
     width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 30px;
+		height: 20px;
+		top:-3px;
+		left:0;
     border: 1px solid;
     border-radius: 5px;
-    left: 50px;
+
 }
-.form-call label.labelcheck {
-	width: 35%;
-    height: 20px !important;
-    display: block;
-    position: relative;
-    float: left;
-    font-size: 14px;
-    line-height: 20px;
+.flat-content .labble-for_check{
+	margin-left: 0;
+}
+
+.quiz2-field input[type=checkbox] + label:before {
+	position: absolute;
+	content: "";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 20px;
+	color: #dee2eb;
+	width: 20px;
+	height: 20px;
+	top:0;
+	left:-28px;
+	border: 1px solid;
+	border-radius: 5px;
+
+}
+
+label.labelcheck {
+		font-size: 14px;
+		margin-left: 30px;
+		margin-right: 4px;
 		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-    padding-left: 80px !important;
+		font-weight: 500;
     color: #395daf;
-    margin-top: 20px !important;
 }
-.form-call .privacy-policy {
-	width: 65%;
-	display: block;
-	float: left;
-	margin-top: 20px;
-	margin-left: -20px;
+.quiz2-field label.labelcheck {
+	position: relative;
+		font-size: 14px;
+		margin-left: 30px;
+		line-height: 25px;
+		margin-right: 4px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+    color: #395daf;
+}
+.privacy-policy {
+	font-size: 14px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 	color: #395daf;
-
+	text-decoration: underline;
+	transition: 300ms;
 }
-.form-call input[type=checkbox]:checked + label:before {
+.privacy-policy:hover{
+	opacity: 0.7;
+}
+input[type=checkbox]:checked + label:before {
     position: absolute;
     content: "\2713";
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
@@ -1982,9 +2016,8 @@ footer.footer {
     height: 20px;
     text-align: center;
     line-height: 20px;
-    border: 1px solid #395daf;
+    border: 1px solid #2d53ac;
     border-radius: 5px;
-    left: 50px;
     background-color: #395daf;
 }
 .form-call .sub-call {
@@ -2167,46 +2200,7 @@ footer.footer {
 .form-flat input[type="checkbox"] {
     display: none;
 }
-.form-flat input[type=checkbox] + label:before {
-    position: absolute;
-    content: "";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #dee2eb;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 30px;
-    border: 1px solid;
-    border-radius: 5px;
-    left: 0px;
-}
-.form-flat label.labelcheck {
-	width: 25%;
-    height: 20px !important;
-    display: block;
-    position: relative;
-    float: left;
-    font-size: 14px;
-    line-height: 20px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-    padding-left: 40px !important;
-    color: #395daf;
-    margin-top: 20px !important;
-    z-index: 999;
-}
-.form-flat .privacy-policy {
-	width: 75%;
-	display: block;
-	float: left;
-	margin-top: 19px;
-	margin-left: -15px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	color: #395daf;
-	text-decoration: underline;
-}
+
 .form-flat input[type=checkbox]:checked + label:before {
     position: absolute;
     content: "\2713";
@@ -2426,47 +2420,8 @@ footer.footer {
 .form-flaty input[type="checkbox"] {
     display: none;
 }
-.form-flaty input[type=checkbox] + label:before {
-    position: absolute;
-    content: "";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #dee2eb;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 30px;
-    border: 1px solid;
-    border-radius: 5px;
-    left: 0px;
-}
 
-.form-flaty label.labelcheck {
-	width: 28%;
-    height: 20px !important;
-    display: block;
-    position: relative;
-    float: left;
-    font-size: 14px;
-    line-height: 20px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-    padding-left: 38px !important;
-    color: #395daf;
-    margin-top: 20px !important;
-    z-index: 999;
-}
-.form-flaty .privacy-policy {
-	width: 72%;
-	display: block;
-	float: left;
-	margin-top: 19px;
-	padding-left: 8px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	color: #395daf;
-	text-decoration: underline;
-}
+
 .form-flaty input[type=checkbox]:checked + label:before {
     position: absolute;
     content: "\2713";
@@ -2654,59 +2609,8 @@ footer.footer {
 .form-tour input[type="checkbox"] {
     display: none;
 }
-.form-tour input[type=checkbox] + label:before {
-    position: absolute;
-    content: "";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #dee2eb;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 30px;
-    border: 1px solid;
-    border-radius: 5px;
-    left: 50px;
-}
-.form-tour label.labelcheck {
-    width: 35%;
-    height: 20px !important;
-    display: block;
-    position: relative;
-    float: left;
-    font-size: 14px;
-    line-height: 20px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-    padding-left: 80px !important;
-    color: #395daf;
-    margin-top: 20px !important;
-}
-.form-tour .privacy-policy {
-	width: 65%;
-	display: block;
-	float: left;
-	margin-top: 19px;
-	margin-left: -8px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	color: #395daf;
-}
-.form-tour input[type=checkbox]:checked + label:before {
-    position: absolute;
-    content: "\2713";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    border: 1px solid #395daf;
-    border-radius: 5px;
-    left: 50px;
-    background-color: #395daf;
-}
+
+
 .form-tour .sub-tour {
 	position: relative;
 	display: block;
@@ -2874,61 +2778,7 @@ footer.footer {
 .form-comfort input[type="checkbox"] {
     display: none;
 }
-.form-comfort input[type=checkbox] + label:before {
-    position: absolute;
-    content: "";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #dee2eb;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 30px;
-    border: 1px solid;
-    border-radius: 5px;
-    left: 50px;
-}
 
-.form-comfort label.labelcheck {
-    width: 35%;
-    height: 20px !important;
-    display: block;
-    position: relative;
-    float: left;
-    font-size: 14px;
-    line-height: 20px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-    padding-left: 80px !important;
-    color: #395daf;
-    margin-top: 20px !important;
-}
-.form-comfort .privacy-policy {
-	width: 65%;
-	display: block;
-	float: left;
-	margin-top: 21px;
-	margin-left: -8px;
-	font-family: 'Roboto', sans-serif;
-	text-decoration: underline;
-	font-weight: 700;
-	color: #395daf;
-}
-.form-comfort input[type=checkbox]:checked + label:before {
-    position: absolute;
-    content: "\2713";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    border: 1px solid #395daf;
-    border-radius: 5px;
-    left: 50px;
-    background-color: #395daf;
-}
 .form-comfort .sub-comfort {
 	display: block;
 	width: 250px;
@@ -3093,61 +2943,7 @@ footer.footer {
 .form-cheap input[type="checkbox"] {
     display: none;
 }
-.form-cheap input[type=checkbox] + label:before {
-    position: absolute;
-    content: "";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #dee2eb;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 30px;
-    border: 1px solid;
-    border-radius: 5px;
-    left: 50px;
-}
 
-.form-cheap label.labelcheck {
-    width: 35%;
-    height: 20px !important;
-    display: block;
-    position: relative;
-    float: left;
-    font-size: 14px;
-    line-height: 20px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-    padding-left: 80px !important;
-    color: #395daf;
-    margin-top: 20px !important;
-}
-.form-cheap .privacy-policy {
-	width: 65%;
-	display: block;
-	float: left;
-	margin-top: 21px;
-	margin-left: -8px;
-	font-family: 'Roboto', sans-serif;
-	text-decoration: underline;
-	font-weight: 700;
-	color: #395daf;
-}
-.form-cheap input[type=checkbox]:checked + label:before {
-    position: absolute;
-    content: "\2713";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    border: 1px solid #395daf;
-    border-radius: 5px;
-    left: 50px;
-    background-color: #395daf;
-}
 .form-cheap .sub-cheap {
 	display: block;
 	width: 250px;
@@ -3456,6 +3252,7 @@ footer.footer {
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 	transition: all 0.5s ease 0s;
 	margin-top: 30px;
+	margin-bottom: 15px;
 }
 .quiz2-buttons button:hover {
 	box-shadow: none;
@@ -3530,20 +3327,7 @@ footer.footer {
 .confidential2 input[type="checkbox"] {
     display: none;
 }
-.confidential2 input[type=checkbox] + label:before {
-    position: absolute;
-    content: "";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #dee2eb;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 30px;
-    border: 1px solid;
-    border-radius: 5px;
-    left: 0px;
-}
+
 .confidential2 label {
 	display: block;
 	width: 25%;
@@ -3559,32 +3343,7 @@ footer.footer {
     color: #395daf;
     margin-top: 20px !important;
 }
-.confidential2 .privacy-policy {
-	width: 75%;
-	display: block;
-	float: left;
-	margin-top: 19px;
-	margin-left: 0px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700;
-	color: #395daf;
-	text-decoration: underline;
-}
-.confidential2 input[type=checkbox]:checked + label:before {
-    position: absolute;
-    content: "\2713";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    border: 1px solid #395daf;
-    border-radius: 5px;
-    left: 0px;
-    background-color: #395daf;
-}
+
 
 
 .step2 {
@@ -3834,20 +3593,7 @@ input.radio:checked + label:after {
 .checkitnow input[type="checkbox"] {
     display: none;
 }
-.checkitnow input[type=checkbox] + label:before {
-    position: absolute;
-    content: "";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #dee2eb;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 30px;
-    border: 1px solid;
-    border-radius: 5px;
-    left: 0px;
-}
+
 .checkitnow label {
     height: 25px !important;
     display: block;
@@ -3860,22 +3606,6 @@ input.radio:checked + label:after {
     margin-top: 0px !important;
     color: #000;
 }
-.checkitnow input[type=checkbox]:checked + label:before {
-    position: absolute;
-    content: "\2713";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    border: 1px solid #395daf;
-    border-radius: 5px;
-    left: 0px;
-    background-color: #395daf;
-}
-
 
 
 .quiz-buttons {
@@ -4072,20 +3802,7 @@ input.radio:checked + label:after {
 .confidential input[type="checkbox"] {
     display: none;
 }
-.confidential input[type=checkbox] + label:before {
-    position: absolute;
-    content: "";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #dee2eb;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 30px;
-    border: 1px solid;
-    border-radius: 5px;
-    left: 0px;
-}
+
 .confidential label {
 	display: block;
 	width: 25%;
@@ -4100,31 +3817,7 @@ input.radio:checked + label:after {
     color: #395daf;
     margin-top: 0px !important;
 }
-.confidential .privacy-policy {
-	display: block;
-	width: 75%;
-	float: left;
-	margin-top: 0px;
-	font-family: 'Roboto', sans-serif;
-	text-decoration: underline;
-	font-weight: 700;
-	color: #395daf;
-}
-.confidential input[type=checkbox]:checked + label:before {
-    position: absolute;
-    content: "\2713";
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    font-size: 20px;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    border: 1px solid #395daf;
-    border-radius: 5px;
-    left: 0px;
-    background-color: #395daf;
-}
+
 .quiz-content p strong {
 	text-transform: uppercase;
 	color: #395daf;
@@ -5219,60 +4912,7 @@ a.expert-call {
 	.form-call input[type="checkbox"] {
 	    display: none;
 	}
-	.form-call input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 50px;
-	}
-	.form-call label.labelcheck {
-		width: 35%;
-	    height: 20px !important;
-	    display: block;
-	    position: relative;
-	    float: left;
-	    font-size: 12px;
-	    line-height: 20px;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 700;
-	    padding-left: 80px !important;
-	    color: #395daf;
-	    margin-top: 20px !important;
-	}
-	.form-call .privacy-policy {
-		width: 65%;
-		display: block;
-		float: left;
-		margin-top: 21px;
-		margin-left: -20px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-		font-size: 13px;
-	}
-	.form-call input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 50px;
-	    background-color: #395daf;
-	}
+	/* 
 	.form-call .sub-call {
 		position: relative;
 		display: block;
@@ -5452,61 +5092,7 @@ a.expert-call {
 	.form-flat input[type="checkbox"] {
 	    display: none;
 	}
-	.form-flat input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 0px;
-	}
-	.form-flat label.labelcheck {
-		width: 25%;
-	    height: 20px !important;
-	    display: block;
-	    position: relative;
-	    float: left;
-	    font-size: 12px;
-	    line-height: 20px;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 700;
-	    padding-left: 40px !important;
-	    color: #395daf;
-	    margin-top: 20px !important;
-	    z-index: 999;
-	}
-	.form-flat .privacy-policy {
-		width: 75%;
-		display: block;
-		float: left;
-		font-size: 12px;
-		margin-top: 22px;
-		margin-left: 0px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-	}
-	.form-flat input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 0px;
-	    background-color: #395daf;
-	}
+
 	.form-flat .sub-flat {
 		display: block;
 		width: 250px;
@@ -5710,62 +5296,7 @@ a.expert-call {
 	.form-flaty input[type="checkbox"] {
 	    display: none;
 	}
-	.form-flaty input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 0px;
-	}
 
-	.form-flaty label.labelcheck {
-		width: 33%;
-	    height: 20px !important;
-	    display: block;
-	    position: relative;
-	    float: left;
-	    font-size: 12px;
-	    line-height: 20px;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 700;
-	    padding-left: 40px !important;
-	    color: #395daf;
-	    margin-top: 20px !important;
-	    z-index: 999;
-	}
-	.form-flaty .privacy-policy {
-		width: 67%;
-		display: block;
-		float: left;
-		font-size: 12px;
-		margin-top: 22px;
-		padding-left: 8px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-	}
-	.form-flaty input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 0px;
-	    background-color: #395daf;
-	}
 	.form-flaty .sub-flaty {
 		position: relative;
 		display: block;
@@ -5935,61 +5466,7 @@ a.expert-call {
 	.form-tour input[type="checkbox"] {
 	    display: none;
 	}
-	.form-tour input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 50px;
-	}
-	.form-tour label.labelcheck {
-	    width: 35%;
-	    height: 20px !important;
-	    display: block;
-	    position: relative;
-	    float: left;
-	    font-size: 12px;
-	    line-height: 20px;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 700;
-	    padding-left: 80px !important;
-	    color: #395daf;
-	    margin-top: 20px !important;
-	}
-	.form-tour .privacy-policy {
-		width: 64%;
-		display: block;
-		float: left;
-		margin-top: 20px;
-		margin-left: 0px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-		font-size: 14px;
-		text-decoration: underline;
-	}
-	.form-tour input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 50px;
-	    background-color: #395daf;
-	}
+
 	.form-tour .sub-tour {
 		position: relative;
 		display: block;
@@ -6155,61 +5632,6 @@ a.expert-call {
 	.form-comfort input[type="checkbox"] {
 	    display: none;
 	}
-	.form-comfort input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 50px;
-	}
-
-	.form-comfort label.labelcheck {
-	    width: 35%;
-	    height: 20px !important;
-	    display: block;
-	    position: relative;
-	    float: left;
-	    font-size: 12px;
-	    line-height: 20px;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 700;
-	    padding-left: 80px !important;
-	    color: #395daf;
-	    margin-top: 20px !important;
-	}
-	.form-comfort .privacy-policy {
-		width: 65%;
-		display: block;
-		font-size: 12px;
-		float: left;
-		margin-top: 22px;
-		margin-left: 0px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-	}
-	.form-comfort input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 50px;
-	    background-color: #395daf;
-	}
 	.form-comfort .sub-comfort {
 		display: block;
 		width: 250px;
@@ -6371,61 +5793,6 @@ a.expert-call {
 	}
 	.form-cheap input[type="checkbox"] {
 	    display: none;
-	}
-	.form-cheap input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 50px;
-	}
-
-	.form-cheap label.labelcheck {
-	    width: 35%;
-	    height: 20px !important;
-	    display: block;
-	    position: relative;
-	    float: left;
-	    font-size: 12px;
-	    line-height: 20px;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 700;
-	    padding-left: 80px !important;
-	    color: #395daf;
-	    margin-top: 20px !important;
-	}
-	.form-cheap .privacy-policy {
-		width: 65%;
-		display: block;
-		float: left;
-		margin-top: 22px;
-		margin-left: 0px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-		font-size: 12px;
-	}
-	.form-cheap input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 50px;
-	    background-color: #395daf;
 	}
 	.form-cheap .sub-cheap {
 		display: block;
@@ -6687,20 +6054,6 @@ a.expert-call {
 	.checkitnow input[type="checkbox"] {
 	    display: none;
 	}
-	.checkitnow input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 0px;
-	}
 	.checkitnow label {
 	    height: 25px !important;
 	    display: block;
@@ -6713,23 +6066,6 @@ a.expert-call {
 	    margin-top: 0px !important;
 	    color: #000;
 	}
-	.checkitnow input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 0px;
-	    background-color: #395daf;
-	}
-
-
 
 	.quiz-buttons {
 		position: relative;
@@ -6915,20 +6251,6 @@ a.expert-call {
 	.confidential input[type="checkbox"] {
 	    display: none;
 	}
-	.confidential input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 0px;
-	}
 	.confidential label {
 		display: block;
 		width: 28%;
@@ -6942,31 +6264,6 @@ a.expert-call {
 	    padding-left: 30px !important;
 	    color: #395daf;
 	    margin-top: 0px !important;
-	}
-	.confidential .privacy-policy {
-		display: block;
-		width: 72%;
-		float: left;
-		font-size: 12px;
-		margin-top: 2px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-	}
-	.confidential input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 0px;
-	    background-color: #395daf;
 	}
 	.quiz-content p strong {
 		text-transform: uppercase;
@@ -7327,6 +6624,7 @@ a.expert-call {
 		box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 		transition: all 0.5s ease 0s;
 		margin-top: 30px;
+		margin-bottom: 15px;
 	}
 	.quiz2-buttons button:hover {
 		box-shadow: none;
@@ -7401,20 +6699,6 @@ a.expert-call {
 	.confidential2 input[type="checkbox"] {
 	    display: none;
 	}
-	.confidential2 input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 0px;
-	}
 	.confidential2 label {
 		display: block;
 		width: 28%;
@@ -7429,32 +6713,6 @@ a.expert-call {
 	    padding-left: 30px !important;
 	    color: #395daf;
 	    margin-top: 20px !important;
-	}
-	.confidential2 .privacy-policy {
-		width: 72%;
-		display: block;
-		float: left;
-		margin-top: 23px;
-		font-size: 12px;
-		margin-left: -3px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-	}
-	.confidential2 input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 0px;
-	    background-color: #395daf;
 	}
 	.p-close {
 		display: none !important;
@@ -8119,64 +7377,6 @@ a.expert-call {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 18px;
 	}
-	.form-call input[type="checkbox"] {
-	    display: none;
-	}
-	.form-call input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 0px;
-	}
-	.form-call label.labelcheck {
-	    height: 20px !important;
-	    display: block;
-	    position: relative;
-	    float: left;
-	    font-size: 12px;
-	    line-height: 20px;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 700;
-	    padding-left: 5px !important;
-	    color: #395daf;
-	    margin-top: 20px !important;
-	}
-	.form-call .privacy-policy {
-		width: 70%;
-		display: block;
-		float: left;
-		text-decoration: underline;
-		margin-top: 25px;
-		line-height: 10px;
-		margin-left: -28px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-		font-size: 12px;
-	}
-	.form-call input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 0px;
-	    background-color: #395daf;
-	}
 	.form-call .sub-call {
 		position: relative;
 		display: block;
@@ -8355,61 +7555,6 @@ a.expert-call {
 	}
 	.form-flat input[type="checkbox"] {
 	    display: none;
-	}
-	.form-flat input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 0px;
-	}
-	.form-flat label.labelcheck {
-		width: 30%;
-	    height: 20px !important;
-	    display: block;
-	    position: relative;
-	    float: left;
-	    font-size: 10px;
-	    line-height: 20px;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 700;
-	    padding-left: 40px !important;
-	    color: #395daf;
-	    margin-top: 20px !important;
-	    z-index: 999;
-	}
-	.form-flat .privacy-policy {
-		width: 70%;
-		display: block;
-		float: left;
-		font-size: 10px;
-		margin-top: 23px;
-		margin-left: 0px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-	}
-	.form-flat input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 0px;
-	    background-color: #395daf;
 	}
 	.form-flat .sub-flat {
 		display: block;
@@ -8615,62 +7760,6 @@ a.expert-call {
 	.form-flaty input[type="checkbox"] {
 	    display: none;
 	}
-	.form-flaty input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 0px;
-	}
-
-	.form-flaty label.labelcheck {
-		width: 33%;
-	    height: 20px !important;
-	    display: block;
-	    position: relative;
-	    float: left;
-	    font-size: 12px;
-	    line-height: 20px;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 700;
-	    padding-left: 40px !important;
-	    color: #395daf;
-	    margin-top: 20px !important;
-	    z-index: 999;
-	}
-	.form-flaty .privacy-policy {
-		width: 67%;
-		display: block;
-		float: left;
-		font-size: 12px;
-		margin-top: 22px;
-		padding-left: 8px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-	}
-	.form-flaty input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 0px;
-	    background-color: #395daf;
-	}
 	.form-flaty .sub-flaty {
 		position: relative;
 		display: block;
@@ -8840,60 +7929,6 @@ a.expert-call {
 	.form-tour input[type="checkbox"] {
 	    display: none;
 	}
-	.form-tour input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 30px;
-	}
-	.form-tour label.labelcheck {
-	    width: 40%;
-	    height: 20px !important;
-	    display: block;
-	    position: relative;
-	    float: left;
-	    font-size: 10px;
-	    line-height: 20px;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 700;
-	    padding-left: 70px !important;
-	    color: #395daf;
-	    margin-top: 20px !important;
-	}
-	.form-tour .privacy-policy {
-		width: 60%;
-		display: block;
-		float: left;
-		margin-top: 22px;
-		margin-left: 0px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-		font-size: 10px;
-	}
-	.form-tour input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 30px;
-	    background-color: #395daf;
-	}
 	.form-tour .sub-tour {
 		position: relative;
 		display: block;
@@ -9059,61 +8094,6 @@ a.expert-call {
 	.form-comfort input[type="checkbox"] {
 	    display: none;
 	}
-	.form-comfort input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 30px;
-	}
-
-	.form-comfort label.labelcheck {
-	    width: 40%;
-	    height: 20px !important;
-	    display: block;
-	    position: relative;
-	    float: left;
-	    font-size: 10px;
-	    line-height: 20px;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 700;
-	    padding-left: 70px !important;
-	    color: #395daf;
-	    margin-top: 20px !important;
-	}
-	.form-comfort .privacy-policy {
-		width: 60%;
-		display: block;
-		font-size: 10px;
-		float: left;
-		margin-top: 23px;
-		margin-left: 0px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-	}
-	.form-comfort input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 30px;
-	    background-color: #395daf;
-	}
 	.form-comfort .sub-comfort {
 		display: block;
 		width: 250px;
@@ -9276,61 +8256,6 @@ a.expert-call {
 	.form-cheap input[type="checkbox"] {
 	    display: none;
 	}
-	.form-cheap input[type=checkbox] + label:before {
-	    position: absolute;
-	    content: "";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #dee2eb;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 30px;
-	    border: 1px solid;
-	    border-radius: 5px;
-	    left: 30px;
-	}
-
-	.form-cheap label.labelcheck {
-	    width: 40%;
-	    height: 20px !important;
-	    display: block;
-	    position: relative;
-	    float: left;
-	    font-size: 10px;
-	    line-height: 20px;
-			font-family: 'Roboto', sans-serif;
-			font-weight: 700;
-	    padding-left: 70px !important;
-	    color: #395daf;
-	    margin-top: 20px !important;
-	}
-	.form-cheap .privacy-policy {
-		width: 60%;
-		display: block;
-		float: left;
-		margin-top: 23px;
-		margin-left: 0px;
-		font-family: 'Roboto', sans-serif;
-		font-weight: 700;
-		color: #395daf;
-		font-size: 10px;
-	}
-	.form-cheap input[type=checkbox]:checked + label:before {
-	    position: absolute;
-	    content: "\2713";
-	    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-	    font-size: 20px;
-	    color: #fff;
-	    width: 20px;
-	    height: 20px;
-	    text-align: center;
-	    line-height: 20px;
-	    border: 1px solid #395daf;
-	    border-radius: 5px;
-	    left: 30px;
-	    background-color: #395daf;
-	}
 	.form-cheap .sub-cheap {
 		display: block;
 		width: 250px;
@@ -9420,6 +8345,17 @@ a.expert-call {
 }
 
 @media screen and (max-width: 540px) {
+	.main_video{
+		display: none!important;
+		/* background:url("../images/mobile_main_bg.jpg"); */
+		background-size: cover;
+	}
+	.intro-mask{
+		background:linear-gradient(to right,rgba(0, 0, 0, 0.5) 35%, rgba(0, 0, 0, 0.5) 75%),url("../images/mobile_main_bg.jpg");
+		background-size: cover;
+					animation: 10s ease-in-out 0s infinite alternate move_bg;
+	}
+        @keyframes move_bg { from { background-size: 100%;} to { background-size: 125%; }  }
 	.header {
 		min-width: 414px;
 	}

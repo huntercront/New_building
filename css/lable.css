@@ -1,0 +1,99 @@
+input.num-good {
+	display: inline-block;
+	width: 38%;
+	text-align: center;
+	margin: 0 auto;
+	margin-left: 1.2%;
+	margin-right: 1.2%;
+	margin-top: 20px;
+}
+.form-call ::-webkit-input-placeholder {
+	text-align: center;
+	color: #5e6c8a;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+}
+.form-call input[type="checkbox"] {
+    display: none;
+}
+.form-call input[type=checkbox] + label:before {
+    position: absolute;
+    content: "";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 20px;
+    color: #dee2eb;
+    width: 20px;
+		height: 20px;
+		top:-3px;
+		left:0;
+    /* line-height: 30px; */
+    border: 1px solid;
+    border-radius: 5px;
+    /* left: 50px; */
+}
+.form-call label.labelcheck {
+	/* width: 35%; */
+    /* height: 20px !important;
+    display: block;
+    position: relative;
+    float: left; */
+		font-size: 14px;
+		margin-left: 30px;
+		margin-right: 4px;
+    /* line-height: 20px; */
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+    /* padding-left: 80px !important; */
+    color: #395daf;
+    /* margin-top: 20px !important; */
+}
+.form-call .privacy-policy {
+	/* width: 65%; */
+	/* display: block;
+	float: left; */
+	/* margin-top: 20px;
+	margin-left: -20px; */
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	color: #395daf;
+	text-decoration: underline;
+	transition: 300ms;
+}
+.form-call .privacy-policy:hover{
+	opacity: 0.7;
+}
+.form-call input[type=checkbox]:checked + label:before {
+    position: absolute;
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 20px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #2d53ac;
+    border-radius: 5px;
+    /* left: 50px; */
+    background-color: #395daf;
+}
+.form-call .sub-call {
+	position: relative;
+	display: block;
+	width: 250px;
+	height: 50px;
+	line-height: 40px;
+	border-radius: 20px;
+	box-shadow: none;
+	border: 2px solid #3155aa;
+	background-color: #3155aa;
+	color: #fff;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+	transition: all 0.5s ease 0s;
+	margin-top: 30px;
+	overflow: hidden;
+	margin: 0 auto;
+}
