@@ -39,6 +39,29 @@ font-style: normal;
 	align-items: center;
 	position: relative;
 }
+.quiz-content .labble-for_check{
+	margin-left: 0px;
+}
+.flaty-content .labble-for_check{
+	margin-left: 0px;
+	display: flex;
+	flex-wrap: nowrap;
+	width: 95%;
+	justify-content: flex-start;
+	margin-top:20px;
+	align-items: center;
+	position: relative;
+}
+.quiz2-field .labble-for_check{
+	margin-left: 0px;
+	display: flex;
+	flex-wrap: nowrap;
+	width: 95%;
+	justify-content: flex-start;
+	margin-top:20px;
+	align-items: center;
+	position: relative;
+}
 .main-navigation:before {
 	display: block;
 	content: "";
@@ -4596,6 +4619,15 @@ a.expert-call {
 
 
 @media screen and (max-width: 767px) {
+	.quiz-content .labble-for_check{
+		width: 100%;
+	}
+	.quiz2-field label.labelcheck{
+		font-size: 12px;
+	}
+	.quiz2-field .privacy-policy {
+			font-size: 12px;
+	}
 	.percent-extra-style{
 		font-size: 26px!important;
 	}
@@ -6006,7 +6038,8 @@ a.expert-call {
 	input.radio + label {
 	  position: relative;
 	  padding: 0 0 0 35px;
-	  cursor: pointer;
+		cursor: pointer;
+		font-size: 14px;
 	}
 	input.radio + label:before {
 	    position: absolute;
@@ -6021,12 +6054,12 @@ a.expert-call {
 	    border: 1px solid;
 	    border-radius: 5px;
 	    left: 0px;
-	    top: 5px;
+	    top: -1px;
 	}
 	input.radio + label:after {
 	  content: "\2713";
 	  position: absolute;
-	  top: 5px;
+	  top: -1px;
 	  left: 0px;
 	  width: 20px;
 	  height: 20px;
@@ -6060,7 +6093,7 @@ a.expert-call {
 	    position: relative;
 	    line-height: 20px;
 	    font-family: 'Open Sans', sans-serif;
-		font-size: 18px;
+		font-size: 14px;
 	    padding-left: 30px !important;
 	    color: #395daf;
 	    margin-top: 0px !important;
@@ -7024,6 +7057,141 @@ a.expert-call {
 	.header {
 		min-width: 600px;
 	}
+	.flat-content .labble-for_check{
+		margin-left: 0;
+	}
+	.labble-for_check{
+		margin-left: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		width: 80%;
+		justify-content: flex-start;
+		margin-top:20px;
+		align-items: center;
+		position: relative;
+	}
+	.quiz-content .labble-for_check{
+		/* margin-left: 30px; */
+		display: flex;
+		flex-wrap: wrap;
+		width: 80%;
+		justify-content: flex-start;
+		margin-top:20px;
+		align-items: center;
+		position: relative;
+	}
+	.flaty-content .labble-for_check{
+		margin-left: 0px;
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+		justify-content: flex-start;
+		margin-top:20px;
+		align-items: center;
+		position: relative;
+	}
+	.form-comfort input{
+		width: 90%;
+	}
+	input[type=checkbox] + label:before {
+    position: absolute;
+    content: "";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 20px;
+    color: #dee2eb;
+    width: 20px;
+		height: 20px;
+		top:2px;
+		left:0;
+    border: 1px solid;
+    border-radius: 5px;
+
+}
+.flaty-content input[type=checkbox] + label:before {
+	position: absolute;
+	content: "";
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+	font-size: 20px;
+	color: #dee2eb;
+	width: 20px;
+	height: 20px;
+	top:-5px;
+	left:0;
+	border: 1px solid;
+	border-radius: 5px;
+
+}
+
+	/* .quiz2-field input[type=checkbox] + label:before {
+		position: absolute;
+		content: "";
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+		font-size: 20px;
+		color: #dee2eb;
+		width: 20px;
+		height: 20px;
+    top: -3px;
+    left: 0;
+		border: 1px solid;
+		border-radius: 5px;
+	
+	} */
+	.quiz2-field input[type=checkbox]:checked + label:before {
+    position: absolute;
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 20px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px solid #2d53ac;
+    border-radius: 5px;
+		background-color: #395daf;
+	}
+	label.labelcheck {
+			font-size: 12px;
+			margin-left: 30px;
+			margin-right: 4px;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 500;
+			color: #395daf;
+	}
+	.quiz2-field label.labelcheck {
+		position: relative;
+			font-size: 12px;
+			margin-left: 30px;
+			line-height: 25px;
+			margin-right: 4px;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 500;
+			color: #395daf;
+	}
+
+	.privacy-policy {
+		font-size: 12px;
+		margin-left: 30px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		color: #395daf;
+		text-decoration: underline;
+		transition: 300ms;
+	}
+	.quiz2-field .privacy-policy {
+		margin-left: 0px;
+
+	}
+	.flaty-content .privacy-policy {
+		margin-left: 0px;
+		font-size: 12px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		color: #395daf;
+		text-decoration: underline;
+		transition: 300ms;
+	}
+
 	.header-grid {
 		width:600px;
 	}
@@ -8073,7 +8241,6 @@ a.expert-call {
 	}
 	.form-comfort input {
 		display: block;
-		width: 80%;
 		height: 30px;
 		margin: 0 auto;
 		line-height: 30px;
@@ -8663,6 +8830,15 @@ a.expert-call {
 	}
 }
 @media screen and (max-width: 390px) {
+	.checkitnow label{
+		font-size: 14px;
+	}
+	.quiz2-field label.labelcheck{
+		font-size: 10px;
+	}
+	.quiz2-field .privacy-policy {
+			font-size: 10px;
+	}
 	.quiz2-count p{
 		width: 95%;
 		line-height: 9px;
