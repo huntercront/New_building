@@ -1893,7 +1893,6 @@ footer.footer {
 	border-radius: 50%;
 	width: 150px;
 	height: 150px;
-	background-color: #8996ab;
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -5240,7 +5239,7 @@ a.expert-call {
 	    display: block;
 	    position: relative;
 	    float: left;
-	    font-size: 13px;
+	    font-size: 12px;
 	    line-height: 20px;
 			font-family: 'Roboto', sans-serif;
 			font-weight: 700;
@@ -8135,32 +8134,33 @@ a.expert-call {
 	    line-height: 30px;
 	    border: 1px solid;
 	    border-radius: 5px;
-	    left: 50px;
+	    left: 0px;
 	}
 	.form-call label.labelcheck {
-		width: 35%;
 	    height: 20px !important;
 	    display: block;
 	    position: relative;
 	    float: left;
-	    font-size: 13px;
+	    font-size: 12px;
 	    line-height: 20px;
 			font-family: 'Roboto', sans-serif;
 			font-weight: 700;
-	    padding-left: 80px !important;
+	    padding-left: 5px !important;
 	    color: #395daf;
 	    margin-top: 20px !important;
 	}
 	.form-call .privacy-policy {
-		width: 65%;
+		width: 70%;
 		display: block;
 		float: left;
-		margin-top: 21px;
-		margin-left: -20px;
+		text-decoration: underline;
+		margin-top: 25px;
+		line-height: 10px;
+		margin-left: -28px;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 700;
 		color: #395daf;
-		font-size: 13px;
+		font-size: 12px;
 	}
 	.form-call input[type=checkbox]:checked + label:before {
 	    position: absolute;
@@ -8174,7 +8174,7 @@ a.expert-call {
 	    line-height: 20px;
 	    border: 1px solid #395daf;
 	    border-radius: 5px;
-	    left: 50px;
+	    left: 0px;
 	    background-color: #395daf;
 	}
 	.form-call .sub-call {
